@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicarion</title>
+    <style>
+        #finder {
+            background-color: #121212;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 1100px;
+            height: 450px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        #finder #upframe {
+            position: absolute;
+            width: 1120px;
+            height: 30px;
+            top: 0px;
+            left: 0;
+            background-color: rgb(88, 78, 78);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        #upframe #close {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 10px;
+            top: 8px;
+            background-color:red;
+            border-radius: 50%;
+        }
+        #upframe #minimize {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 30px;
+            top: 8px;
+            background-color:yellow;
+            border-radius: 50%;
+        }
+        #upframe #maximize{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 50px;
+            top: 8px;
+            background-color:rgb(70, 223, 70);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="finder">
+        <div id="upframe">
+
+            <div id="close"></div>
+
+            <div id="minimize"></div>
+
+            <div id="maximize"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

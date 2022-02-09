@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macBOTTOM BAR</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <link rel="STYLESHEET" href="CSS/menubar.css">
+    <link rel="STYLESHEET" href="CSS/nav.css">
+    <link rel="STYLESHEET" href="CSS/app-finder.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+    <div class="main">
+        <div id="back"><img src="back.jpg"></img></div>
+        <header>
+            <img src="menu.jpg.png">
+        </header>
+    </div>
+
+    <button id="finder-dropdown-btn">
+        <div id="finder-dropdown">
+            About Finder
+            <hr>
+            Preferences..
+            <hr>
+            Empty Bin
+            <hr>
+            Services
+            <hr>
+            Hide Finder
+            <hr>
+            Hide Otheres
+        </div>
+    </button>
+    <button id="controls-tab-btn"></button>
+    <div id="control-tab">System
+        <div id="wifi">
+            <span class="material-icons">
+                wifi
+            </span> WiFi
+            <br><br>
+            <span class="material-icons">
+                bluetooth
+            </span> BlueTooth<br><br>
+            <img src="Icons/airdrop.png"> AirDrop
+        </div>
+        <div id="dnd"><span class="material-icons">
+                do_not_disturb
+            </span> Do Not Disturb</div>
+        <div id="kbddis"><span class="material-icons">
+                keyboard
+            </span><br>Keyboard<br>Brightness</div>
+        <div id="airplay"><span class="material-icons">
+                airplay
+            </span><br>AirPlay<br>Display</div>
+    </div>
+
+    <div id="container">
+        <span id="finder">
+            <img id="finder" src="finder.jpg">
+            
+        </span>
+        <span id="launch">
+            <img src="launch.png">
+        </span>
+    </div>
+    <!--All the application code-->
+    <div id="finder-app">
+        <div id="upframe">
+
+            <div id="close"></div>
+
+            <div id="minimize"></div>
+
+            <div id="maximize"></div>
+
+        </div>
+    </div>
+    
+</body>
+<script src="JS/menu.js"></script>
+
+</html>

@@ -1,0 +1,51 @@
+#finder-app {
+    display: none;
+    position: absolute;
+    background-color: #121212;
+    left: 350px;
+    top: 100px;
+    width: 850px;
+    height: 450px;
+    padding: 0px;
+    border-radius: 20px;
+    z-index: auto;
+}
+
+#finder-app #upframe {
+    position: absolute;
+    width:inherit;
+    height: 30px;
+    top: 0px;
+    left: 0;
+    background-color: rgb(88, 78, 78);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#upframe #close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 10px;
+    top: 8px;
+    background-color:red;
+    border-radius: 50%;
+}
+#upframe #minimize {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 30px;
+    top: 8px;
+    background-color:yellow;
+    border-radius: 50%;
+}
+#upframe #maximize{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 50px;
+    top: 8px;
+    background-color:rgb(70, 223, 70);
+    border-radius: 50%;
+}

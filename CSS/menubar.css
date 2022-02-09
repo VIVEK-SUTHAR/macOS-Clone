@@ -1,0 +1,102 @@
+#finder-dropdown{
+    overflow: auto;
+    display: none;
+ position: relative;
+ width: 180px;
+ height: 200px;
+ background-color:rgba(137, 209, 243, 0.897);
+ margin-left: -40px;
+ top: 20px;
+ border-radius: 10px;
+ backdrop-filter: blur(2px);
+ font-size: 15px;
+ font-weight: bold;
+ text-align: left;
+ padding-left: 20px;
+ padding-top: 5px;
+ z-index: -1;
+}
+#finder-dropdown hr{
+    width: 170px;
+    justify-content: left;
+    padding-left: 0px;
+}
+
+#finder-dropdown-btn{
+    border: 0;
+    position: absolute;
+    height: 20px;
+    width: 62px;
+    top: 10px;
+    left: 58px;
+    border-radius: 1px;
+    background-color: rgba(0,0,0,0.0);
+}
+#controls-tab-btn{
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    width: 25px;
+    height: 21px;
+    left:1310px;
+    border: none;
+    cursor: pointer;
+
+}
+#control-tab{
+    display: none;
+    position: absolute;
+    height: 400px;
+    width: 430px;
+    background-color: #7decff56;
+    left: 1000px;
+    top:5%;
+    border-radius: 10px;
+    font-size: 22px;
+    padding-left: 15px;
+    
+}
+#wifi{
+    position: absolute;
+    font-size: 15px;
+    display: block;
+    height: 125px;
+    width: 150px;
+    padding-left: 15px;
+    border-radius:15px;
+    padding-top: 10px;
+    background-color: #e7e1e16c;
+}
+#wifi:hover,#dnd:hover,#kbddis:hover,#airplay:hover{
+    background-color: #e7e1e18c;
+}
+#control-tab #wifi img{
+    width: 20px;
+}
+#dnd{
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    left: 200px;
+    background-color: #e7e1e16c;
+    border-radius: 10px;
+    padding-left: 12px;
+}
+#kbddis{
+    position: absolute;
+    left: 200px;
+    margin-top: 45px;
+    width: 110px;
+    border-radius: 10px;
+    background-color: #e7e1e16c;
+    padding-left: 5px; 
+}
+#airplay{
+    position:absolute;
+    left: 325px;
+    margin-top: 45px;
+    background-color: #e7e1e16c;
+    border-radius: 10px;
+    width: 100px;
+    padding-left: 10px;
+
+}
