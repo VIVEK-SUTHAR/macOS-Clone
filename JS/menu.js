@@ -1,3 +1,5 @@
+//jQuery is used in this js 
+
 //finder dropdown when clicked on finder dropdown will be displayed
 $('#finder-dropdown-btn').click(function () {
     $('#control-tab').fadeOut(100);
