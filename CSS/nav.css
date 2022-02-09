@@ -1,60 +1,60 @@
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-#back{
-width: 500px;
-height: 500px;
+#back {
+  width: 500px;
+  height: 500px;
 }
-#back img{
-width: 1520px;
-height: 740px;
-border-radius: 20px;
+#back img {
+  width: 1520px;
+  height: 740px;
+  border-radius: 20px;
 }
-.main
-{
-    position: absolute;
-    width:1520px;
-    height: 740px;
-    border-radius: 20px;
-    background-color: aquamarine;
-    border-color: black;
-    border-width: 2px;
+.main {
+  position: absolute;
+  width: 1520px;
+  height: 740px;
+  border-radius: 20px;
+  background-color: aquamarine;
+  border-color: black;
+  border-width: 2px;
 }
-.main header img{
-    
-    width:1518px;
-    position: absolute;
-    top:0px;
-    border-radius: 20px 20px 0px 0px;
+.main header img {
+  width: 1518px;
+  position: absolute;
+  top: 0px;
+  border-radius: 20px 20px 0px 0px;
 }
-#container
-{
-    position:absolute;
-    width: 1460px;
-    height: 50px;
-    background-color:rgba(0,0,0,0.1);
-    opacity: 1;
-    margin-top: 675px;
-    margin-left: 29px;
-    border-radius: 10px;
-
+#container {
+  position: absolute;
+  width: 1460px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  margin-top: 675px;
+  margin-left: 29px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
-#container #finder img{
-    position: absolute;
-    height:40px;
-    border-radius: 10px;
-    display:block;
-    left: 5px;
-    top:4px;
-    opacity: 1;
+#container #finder img {
+  position: absolute;
+  height: 40px;
+  border-radius: 10px;
+  display: block;
+  left: 5px;
+  top: 4px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
 }
-#container #launch img{
-    position: absolute;
-    height:48px;
-    border-radius: 10px;
-    display:flex-vertical;
-    justify-content: center;
-    left:55px;
-    opacity: 1;
+#container #launch img {
+  position: absolute;
+  height: 48px;
+  border-radius: 10px;
+  display: flex-vertical;
+  justify-content: center;
+  left: 55px;
+  opacity: 1;
 }

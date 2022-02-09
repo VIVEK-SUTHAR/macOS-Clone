@@ -18,11 +18,19 @@ $('#controls-tab-btn').click(function () {
 });
 //finder-application-code
 $('#finder').click(function () {
+    $('#finder-app').removeClass("animate__zoomOut");
+    $('#finder-app').addClass("animate__zoomIn");
     $('#finder-app').slideToggle(80);
 });
 $('#close').click(function () {
-    $('#finder-app').fadeToggle(400);
+    $('#finder-app').addClass("animate__zoomOut");
+    $('#finder-app').slideToggle(400);
 });
+$('#maximize').click(function () {
+    $('#finder-app').addClass("animate__zoomInDown");
+
+
+})
 $("#maximize").click(function () {
     let count = 0;
     if (count == 0) {
@@ -34,7 +42,7 @@ $("#maximize").click(function () {
         //$("finder-app").css('background-color','yellow');
         count++;
     }
-    
+
 
 
 
