@@ -13,13 +13,13 @@
 
 #finder-app #upframe {
     position: absolute;
-    width:inherit;
+    width: inherit;
     height: 30px;
     top: 0px;
     left: 0;
     background-color: rgb(88, 78, 78);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 }
 
 #upframe #close {
@@ -28,24 +28,33 @@
     height: 15px;
     left: 10px;
     top: 8px;
-    background-color:red;
+    background-color: red;
     border-radius: 50%;
 }
+
 #upframe #minimize {
     position: absolute;
     width: 15px;
     height: 15px;
     left: 30px;
     top: 8px;
-    background-color:yellow;
+    background-color: yellow;
     border-radius: 50%;
 }
-#upframe #maximize{
+
+#upframe #maximize {
     position: absolute;
     width: 15px;
     height: 15px;
     left: 50px;
     top: 8px;
-    background-color:rgb(70, 223, 70);
+    background-color: rgb(70, 223, 70);
     border-radius: 50%;
+}
+
+.app_finder {
+    position: relative;
+    font-size: 20px;
+    left: 50%;
+    color: aliceblue;
 }
