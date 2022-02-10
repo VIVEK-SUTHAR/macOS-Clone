@@ -1,0 +1,27 @@
+#launch-pad {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.App_Card {
+    position: relative;
+    left: 10%;
+    top: 20%;
+    display: none;
+    font-size: 20px;
+}
+
+.App_Card img {
+    display: block;
+    margin-left: 38%;
+    margin-top: 25%;
+}
