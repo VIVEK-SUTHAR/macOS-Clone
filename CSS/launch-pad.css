@@ -11,15 +11,17 @@
     transition: all 0.3s ease-in-out;
     text-align: center;
 }
+
 .App_Card {
     position: relative;
     left: 0%;
     top: 0%;
     display: none;
     font-size: 20px;
-    
+
 
 }
+
 .App_Card img {
     display: block;
     width: 76px;

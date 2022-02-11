@@ -10,6 +10,8 @@ $('#finder-dropdown-btn').click(function () {
 $('.main').click(function () {
     $('#finder-dropdown').slideUp(300);
     $('#control-tab').slideUp(200);
+    $('#search_form').css("display", "none");
+    $('#search_form').addClass("animate__slideOutDown");
 });
 
 $('#controls-tab-btn').click(function () {
@@ -26,7 +28,7 @@ $('#close').click(function () {
     $('#finder-app').slideToggle(400);
     $('#finder_dot').css("display", "none");
     $("#container").css("bottom", "0px");
-    $('#ter_til').css("display","none");
+    $('#ter_til').css("display", "none");
 });
 $("#maximize").click(function () {
     $("#container").css("bottom", "-800px");
@@ -39,7 +41,7 @@ $("#maximize").click(function () {
         $("#finder-app").css("top", "21.8px");
         $("#finder-app").css("width", "99.999999999%");
         $("#finder-app").css("height", "99.99vh");
-        $("#finder-app").css("border-radius", "1px");
+        $("#finder-app").css("border-radius", "3px");
         $("#finder-app").css("transition", "all 0.8s ease-in-out");
         $("#upframe").css("background-color", "#121212");
     }
@@ -76,15 +78,10 @@ function showFinder() {
     $('#finder-app').removeClass("animate__zoomOut");
     $('#finder-app').addClass("animate__zoomIn");
     $('#finder-app').slideToggle(80);
+    $('#finder-app').css("border-radius", "8px");
     $('#finder_dot').css("display", "block");
     $('#finder_dot').css("background-color", "red");
-    $('#ter_til').css("display","block");
-}
-function showResult() {
-    let cmd = $("#cmd-in input").innerText;
-    if (cmd == "--help") {
-        alert("JH");
-    }
+    $('#ter_til').css("display", "block");
 }
 function showLauncher() {
     $("#launch-pad").css("background-color", "rgba(0,0,0,0.1)");
@@ -92,8 +89,12 @@ function showLauncher() {
     $("#launch-pad").css("top", "0");
     $(".App_Card").css("display", "grid");
     $("#container").css("z-index", "999999999999");
-
-
-
-
 }
+$('#search_bar').click(function () {
+    $('#search_form').css("display", "block");
+    $('#search_form').css("left", "34%");
+    $('#search_form').css("top", "25%");
+    $('#search_form').addClass("animate__slideInUp");
+
+
+})

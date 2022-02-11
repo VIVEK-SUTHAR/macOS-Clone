@@ -8,11 +8,12 @@
     margin-left: 10px;
     top: 22px;
     border-radius: 10px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
     font-size: 15px;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     padding: 10px;
+    z-index: 999999999999999999999999;
 }
 
 #finder-dropdown ul {
@@ -24,6 +25,45 @@
     text-align: left;
     padding: 5px;
 
+}
+
+#search_bar {
+    position: absolute;
+    margin-left: 83.4%;
+    top: 0;
+    width: 35px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#search_form {
+    position: absolute;
+    /* margin:15% 34%; */
+    font-size: 48px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+#search_form input {
+    width: 450px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 42px;
+
+}
+
+#search_form input:focus {
+    outline: none;
 }
 
 #finder-dropdown ul :hover {
@@ -48,13 +88,15 @@
     border-radius: 1px;
     background-color: transparent;
     z-index: 999999999999999999999;
-    
-   
+
+
 }
-#ter_til{
+
+#ter_til {
     display: block;
     font-size: 14px;
-    font-weight: 510;background-color:#696f7d;
+    font-weight: 510;
+    background-color: #696f7d;
     color: white;
     display: none;
     transition: all 0.5s ease-in-out;
@@ -77,7 +119,8 @@
     position: absolute;
     height: 400px;
     width: 440px;
-    background-color:rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     left: 1000px;
     top: 3%;
     border-radius: 10px;

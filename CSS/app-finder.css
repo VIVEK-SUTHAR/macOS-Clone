@@ -7,7 +7,7 @@
     width: 850px;
     height: 450px;
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 #finder-app #upframe {
@@ -79,7 +79,7 @@
     margin-left: 5px;
 }
 
-#finder-app #cmd-in {
+#finder-app   #cmd-in {
     position: relative;
     margin-top: 40px;
     margin-left: 4px;
@@ -92,27 +92,17 @@
     border: none;
     color: greenyellow;
     font-size: 18px;
+    margin-left: 5px;
+    font-family: monospace
 }
 
-#finder-app #cmd-in input:focus {
+#finder-app #cmd-in input:focus  {
     background-color: transparent;
     border: black;
     box-shadow: #121212;
     text-decoration: none;
+    outline: none;
 }
-
-#finder-app #cmd-in #cursor {
-    width: 8px;
-    height: 5px;
-    border-radius: 1px;
-    color: aliceblue;
-    background-color: aliceblue;
-    animation-name: cursor;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
 @keyframes cursor {
     0% {
         opacity: 0;

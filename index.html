@@ -12,13 +12,13 @@
     <link rel="STYLESHEET" href="CSS/app-finder.css">
     <link rel="STYLESHEET" href="CSS/nav.css">
     <link rel="STYLESHEET" href="CSS/launch-pad.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
+
 <body fullscreen>
 
     <div class="main">
@@ -31,6 +31,14 @@
     <button id="finder-dropdown-btn" onclick="showNav()">
         <span id="ter_til">Terminal</span>
     </button>
+    <button id="search_bar">
+    </button>
+    <div id="search_form" class="animate__animated">
+        <form>
+            <label for="input">Search</label><br />
+            <input type="text" autofocus="on" value="" />
+        </form>
+    </div>
     <div id="finder-dropdown">
         <ul>
             <li>About Finder</li>
@@ -64,41 +72,40 @@
     </div>
     <div id="container">
         <div id="icons">
-        <span id="finder" >
-            <img src="finder.jpg">
-        </span>
-        <span id="finder_dot"></span>
-        <span id="launch">
-            <img src="launch.png">
-        </span>
-        <span id="safari">
-            <img src="Icons/safari.png">
-        </span>
-        <span id="msg">
-            <img src="Icons/messages.png">
-        </span>
-        <span id="photos">
-            <img src="Icons/photos.png">
-        </span>
-        <span id="cont">
-            <img src="Icons/cont.png">
-        </span>
-        <span id="set">
-            <img src="Icons/set.png">
-        </span>
-        <span id="notes">
-            <img src="Icons/notes.png">
-        </span>
-        <span id="tv">
-            <img src="Icons/tv.png">
-        </span>
-        <span id="bar">
-           b
-        </span>
-        <span id="trash">
-           <img src="Icons/trash.png"
-        </span>
-    </div>
+            <span id="finder">
+                <img src="finder.jpg">
+            </span>
+            <span id="finder_dot"></span>
+            <span id="launch">
+                <img src="launch.png">
+            </span>
+            <span id="safari">
+                <img src="Icons/safari.png">
+            </span>
+            <span id="msg">
+                <img src="Icons/messages.png">
+            </span>
+            <span id="photos">
+                <img src="Icons/photos.png">
+            </span>
+            <span id="cont">
+                <img src="Icons/cont.png">
+            </span>
+            <span id="set">
+                <img src="Icons/set.png">
+            </span>
+            <span id="notes">
+                <img src="Icons/notes.png">
+            </span>
+            <span id="tv">
+                <img src="Icons/tv.png">
+            </span>
+            <span id="bar">
+                b
+            </span>
+            <span id="trash">
+                <img src="Icons/trash.png" </span>
+        </div>
 
     </div>
     <!--All the application code-->
@@ -109,20 +116,22 @@
             <div id="maximize"></div>
             <div class="app_finder">Terminal</div>
         </div>
-        <p id="cmd-in">Vivek@Terminal~$<span id="cursor">|</span><input type="text" onsubmit="showResult()"/></p>
+        <p id="cmd-in">Vivek@Terminal~$<span id="cursor">
+            <input type="text"/></span>
+        </p>
     </div>
     <div id="launch-pad">
-        <div class="App_Card" id="finder"><img src="/Icons/finder_l.png"><br/>Finder</div>
-        <div class="App_Card"><img src="Icons/cont_l.png"><br/>Contacts</div>
-        <div class="App_Card"><img src="Icons/msg_l.png"><br/>Messages</div>
-        <div class="App_Card"><img src="Icons/safari.png"><br/>Safari</div>
-        <div class="App_Card"><img src="Icons/pht_l.png"><br/>Photos</div>
-        <div class="App_Card"><img src="Icons/seti_l.png"><br/>Settings</div>
-        <div class="App_Card"><img src="Icons/notes_l.png"><br/>iNotes</div>
-        <div class="App_Card"><img src="Icons/tv_l.png"><br/>Apple TV</div>
-        <div class="App_Card"><img src="Icons/Trash_l.png"><br/>Apple TV</div>
+        <div class="App_Card" id="finder"><img src="/Icons/finder_l.png"><br />Finder</div>
+        <div class="App_Card"><img src="Icons/cont_l.png"><br />Contacts</div>
+        <div class="App_Card"><img src="Icons/msg_l.png"><br />Messages</div>
+        <div class="App_Card"><img src="Icons/safari.png"><br />Safari</div>
+        <div class="App_Card"><img src="Icons/pht_l.png"><br />Photos</div>
+        <div class="App_Card"><img src="Icons/seti_l.png"><br />Settings</div>
+        <div class="App_Card"><img src="Icons/notes_l.png"><br />iNotes</div>
+        <div class="App_Card"><img src="Icons/tv_l.png"><br />Apple TV</div>
+        <div class="App_Card"><img src="Icons/Trash_l.png"><br />Apple TV</div>
     </div>
-    
+
 </body>
 <script src="JS/menu.js"></script>
 
