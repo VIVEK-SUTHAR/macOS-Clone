@@ -15,7 +15,7 @@ body {
 }
 
 #back img {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   border-radius: 0px;
 }
@@ -38,24 +38,20 @@ body {
 
 #container {
   position: absolute;
-  width: 20%;
-  height: 51px;
+  width: 32.8%;
+  height: 55px;
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 1;
   margin-top: 675px;
-  margin-left: 605px;
+  margin-left: 500px;
   bottom: 0;
   margin-bottom: 10px;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
-#container:hover{
-  z-index: 999999999;
-}
 
-#container #icons {
-  display: flex;
-  justify-content: center;
+#container:hover {
+  z-index: 999999999;
 }
 
 #container #finder img {
@@ -89,6 +85,7 @@ body {
   left: 105px;
   opacity: 1;
 }
+
 #container #msg img {
   position: absolute;
   height: 48px;
@@ -98,6 +95,7 @@ body {
   left: 155px;
   opacity: 1;
 }
+
 #container #photos img {
   position: absolute;
   height: 48px;
@@ -107,6 +105,7 @@ body {
   left: 208px;
   opacity: 1;
 }
+
 #container #cont img {
   position: absolute;
   height: 48px;
@@ -114,5 +113,59 @@ body {
   display: flex-vertical;
   justify-content: center;
   left: 258px;
+  opacity: 1;
+}
+
+#container #set img {
+  position: absolute;
+  height: 48px;
+  border-radius: 10px;
+  display: flex-vertical;
+  justify-content: center;
+  left: 305px;
+  opacity: 1;
+}
+
+#notes img {
+  position: absolute;
+  height: 48px;
+  border-radius: 10px;
+  display: flex-vertical;
+  justify-content: center;
+  left: 355px;
+  opacity: 1;
+}
+
+#tv img {
+  position: absolute;
+  height: 48px;
+  border-radius: 10px;
+  display: flex-vertical;
+  justify-content: center;
+  left: 400px;
+  opacity: 1;
+}
+
+#bar {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 450px;
+  color: transparent;
+  display: flex-vertical;
+  height: 40px;
+  top: 5px;
+  width: 2px;
+  border-radius: 10px;
+  font-size: 1px;
+}
+
+#trash img {
+  position: absolute;
+  height: 48px;
+  border-radius: 10px;
+  display: flex-vertical;
+  justify-content: center;
+  left: 455px;
+  top: 1px;
   opacity: 1;
 }

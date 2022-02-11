@@ -1,9 +1,10 @@
 //jQuery is used in this js 
+let lauch_count = 0;
+//finder dropdown when clicked on finder dropdown will be displayed44
 
-//finder dropdown when clicked on finder dropdown will be displayed
 $('#finder-dropdown-btn').click(function () {
-    $('#control-tab').fadeOut(100);
     $('#finder-dropdown').slideToggle(400);
+    $('#control-tab').fadeOut(100);
 });
 //when clicked on desktop image finder dropdown will be hidden
 $('.main').click(function () {
@@ -18,15 +19,14 @@ $('#controls-tab-btn').click(function () {
 });
 //finder-application-code
 $('#finder').click(function () {
-   showFinder();
+    showFinder();
 });
 $('#close').click(function () {
     $('#finder-app').addClass("animate__zoomOut");
     $('#finder-app').slideToggle(400);
     $('#finder_dot').css("display", "none");
     $("#container").css("bottom", "0px");
-
-
+    $('#ter_til').css("display","none");
 });
 $("#maximize").click(function () {
     $("#container").css("bottom", "-800px");
@@ -40,15 +40,22 @@ $("#maximize").click(function () {
         $("#finder-app").css("width", "99.999999999%");
         $("#finder-app").css("height", "99.99vh");
         $("#finder-app").css("border-radius", "1px");
-        $("#finder-app").css("transition", "all 0.5s ease-in-out");
+        $("#finder-app").css("transition", "all 0.8s ease-in-out");
         $("#upframe").css("background-color", "#121212");
     }
     count_app++;
 });
 $("#minimize").click(function () {
-    if (count_app >= 0) {
+    if (count_app == 0) {
         $('#finder-app').addClass("animate__zoomOut");
-        $('#finder-app').slideToggle(400);
+
+    }
+    else {
+        $('#finder-app').css("width", "850px");
+        $('#finder-app').css("height", "450px");
+        $('#finder-app').css("left", "380px");
+        $('#finder-app').css("top", "100px");
+        $('#finder-app').css("border-radius", "15px");
         count_app = 0;
     }
     $('#finder_dot').css("background-color", "black");
@@ -56,10 +63,7 @@ $("#minimize").click(function () {
 
 });
 $("#launch").click(function () {
-    $("#launch-pad").css("background-color", "rgba(0,0,0,0.2)");
-    $("#launch-pad").css("backdrop-filter", "blur(3px)");
-    $("#launch-pad").css("top", "0");
-    $(".App_Card").css("display", "grid");
+    showLauncher();
 });
 $("#launch-pad").click(function () {
     $("#launch-pad").css("top", "-100%");
@@ -68,10 +72,28 @@ $("#launch-pad").click(function () {
 $(function () {
     $("#finder-app").draggable();
 });
-function showFinder(){
+function showFinder() {
     $('#finder-app').removeClass("animate__zoomOut");
     $('#finder-app').addClass("animate__zoomIn");
     $('#finder-app').slideToggle(80);
     $('#finder_dot').css("display", "block");
     $('#finder_dot').css("background-color", "red");
+    $('#ter_til').css("display","block");
+}
+function showResult() {
+    let cmd = $("#cmd-in input").innerText;
+    if (cmd == "--help") {
+        alert("JH");
+    }
+}
+function showLauncher() {
+    $("#launch-pad").css("background-color", "rgba(0,0,0,0.1)");
+    $("#launch-pad").css("backdrop-filter", "blur(10px)");
+    $("#launch-pad").css("top", "0");
+    $(".App_Card").css("display", "grid");
+    $("#container").css("z-index", "999999999999");
+
+
+
+
 }

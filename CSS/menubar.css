@@ -1,20 +1,35 @@
 #finder-dropdown {
-    overflow: auto;
+    overflow: hidden;
     display: none;
     position: relative;
-    width: 180px;
+    width: 140px;
     height: 200px;
-    background-color: rgba(137, 209, 243, 0.897);
-    margin-left: -40px;
-    top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 10px;
+    top: 22px;
     border-radius: 10px;
     backdrop-filter: blur(2px);
     font-size: 15px;
     font-weight: bold;
+    text-align:center;
+    padding: 10px;
+}
+
+#finder-dropdown ul {
+    list-style: none;
+}
+
+#finder-dropdown ul li {
+    margin-top: 10px;
     text-align: left;
-    padding-left: 20px;
-    padding-top: 5px;
-    z-index: -1;
+    padding: 5px;
+
+}
+
+#finder-dropdown ul :hover {
+    background-color: rgb(57, 13, 255, 0.8);
+    width: 130px;
+    border-radius: 5px;
 }
 
 #finder-dropdown hr {
@@ -26,12 +41,24 @@
 #finder-dropdown-btn {
     border: 0;
     position: absolute;
-    height: 20px;
-    width: 62px;
-    top: 10px;
-    left: 58px;
+    height: 19px;
+    width: 60px;
+    top: 2px;
+    left: 50px;
     border-radius: 1px;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: transparent;
+    z-index: 999999999999999999999;
+    
+   
+}
+#ter_til{
+    display: block;
+    font-size: 14px;
+    font-weight: 510;background-color:#696f7d;
+    color: white;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    text-decoration-style: solid;
 }
 
 #controls-tab-btn {
@@ -49,10 +76,10 @@
     display: none;
     position: absolute;
     height: 400px;
-    width: 430px;
-    background-color: #7decff56;
+    width: 440px;
+    background-color:rgba(255, 255, 255, 0.2);
     left: 1000px;
-    top: 5%;
+    top: 3%;
     border-radius: 10px;
     font-size: 22px;
     padding-left: 15px;
