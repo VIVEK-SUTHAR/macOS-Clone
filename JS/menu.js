@@ -1,7 +1,7 @@
 //jQuery is used in this js 
 
 var pass = document.querySelector("#pwd").value;
-let lauch_count = 0; 
+let lauch_count = 0;
 
 setTimeout(function () {
     const current = new Date();
@@ -101,7 +101,7 @@ function showFinder() {
 }
 function showLauncher() {
     $("#launch-pad").css("background-color", "rgba(0,0,0,0.1)");
-    $("#launch-pad").css("backdrop-filter", "blur(10px)");
+    $("#launch-pad").css("backdrop-filter", "blur(15px)");
     $("#launch-pad").css("top", "0");
     $(".App_Card").css("display", "grid");
     $("#container").css("z-index", "999999999999");

@@ -6,7 +6,7 @@
     color: aliceblue;
     display: grid;
     grid-template-columns: repeat(5, 0.2fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     top: -100%;
     transition: all 0.3s ease-in-out;
     place-items: left;
