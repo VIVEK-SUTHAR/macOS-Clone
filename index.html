@@ -5,52 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>macBOTTOM BAR</title>
+    <meta name="description" content="macos clone,created by vivek suthar,feel the macos in your browser">
+    <title>macOS Clone|Big Sur Clone By Vivek Suthar|</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="JS/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="STYLESHEET" href="CSS/login.css">
     <link rel="STYLESHEET" href="CSS/menubar.css">
     <link rel="STYLESHEET" href="CSS/app-finder.css">
     <link rel="STYLESHEET" href="CSS/nav.css">
     <link rel="STYLESHEET" href="CSS/launch-pad.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
-        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
-
-
-
-
+    <script src="JS/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <div class="main">
-        <div id="back"><img src="bg.jpg"></img></div>
+        <div id="back">
+            <img id="primarybg" src="bg.jpg" alt="Background image"></img>
+        </div>
         <header>
-            <img src="menu.jpg.png">
+            <img src="menu.jpg.png" alt="menubar">
         </header>
     </div>
     <section id="log_in">
         <div id="time">u</div>
-        <div id="user"><img src="Icons/user-svgrepo-com.svg">
+        <div id="user"><img src="Icons/user-svgrepo-com.svg" alt="userimage">
             <form>
                 <label for="user-name">Vivek Suthar</label><br />
-                <input type="password" placeholder="Enter Password" />
-                <img id="enter" src="Icons/right-arrow-svgrepo-com.svg">
-
+                <input id="pwd" type="password" placeholder="Enter Password" />
+                <img id="enter" src="Icons/right-arrow-svgrepo-com.svg" alt="enter in macos">
+                <div style="margin-top: 10px; font-size: 15px;text-align: start;padding: 20px;">TouchID is not enabaled</div>
             </form>
         </div>
         <div id="btns">
-            <span class="btn" id="slp"><img src="Icons/slp.svg"> Sleep</span>
-            <span class="btn" id="rest"><img src="Icons/rst.svg"> Restart</span>
-            <span class="btn" id="rest"><img src="Icons/shutdown.svg"> ShutDown</span>
+            <span class="btn" id="slp"><img src="Icons/slp.svg" alt="sleepbutton"> Sleep</span>
+            <span class="btn" id="rest"><img src="Icons/rst.svg" alt="restart button"> Restart</span>
+            <span class="btn" id="rest"><img src="Icons/shutdown.svg" alt="shutdown button"> ShutDown</span>
         </div>
     </section>
     <button id="finder-dropdown-btn" onclick="showNav()">
         <span id="ter_til">Terminal</span>
     </button>
-    <button id="search_bar">
+    <button id="search_bar" name="search">
     </button>
     <div id="search_form" class="animate__animated">
         <form>
@@ -67,7 +62,7 @@
             <li>About Mac</li>
         </ul>
     </div>
-    <button id="controls-tab-btn"></button>
+    <button id="controls-tab-btn" name="controls"></button>
     <div id="control-tab">System
         <div id="wifi">
             <span class="material-icons">
@@ -77,7 +72,7 @@
             <span class="material-icons">
                 bluetooth
             </span> BlueTooth<br><br>
-            <img src="Icons/airdrop.png"> AirDrop
+            <img src="Icons/airdrop.png" alt="image of airdrop  "> AirDrop
         </div>
         <div id="dnd"><span class="material-icons">
                 do_not_disturb
@@ -92,38 +87,38 @@
     <div id="container">
         <div id="icons">
             <span id="finder">
-                <img src="finder.jpg">
+                <img src="finder.jpg" alt="docker-icons">
             </span>
             <span id="finder_dot"></span>
             <span id="launch">
-                <img src="launch.png">
+                <img src="launch.png" alt="docker-icons">
             </span>
             <span id="safari">
-                <img src="Icons/safari.png">
+                <img src="Icons/safari.png" alt="docker-icons">
             </span>
             <span id="msg">
-                <img src="Icons/messages.png">
+                <img src="Icons/messages.png" alt="docker-icons">
             </span>
             <span id="photos">
-                <img src="Icons/photos.png">
+                <img src="Icons/photos.png" alt="docker-icons">
             </span>
             <span id="cont">
-                <img src="Icons/cont.png">
+                <img src="Icons/cont.png" alt="docker-icons">
             </span>
             <span id="set">
-                <img src="Icons/set.png">
+                <img src="Icons/set.png" alt="docker-icons">
             </span>
             <span id="notes">
-                <img src="Icons/notes.png">
+                <img src="Icons/notes.png" alt="docker-icons">
             </span>
             <span id="tv">
-                <img src="Icons/tv.png">
+                <img src="Icons/tv.png" alt="docker-icons">
             </span>
             <span id="bar">
                 b
             </span>
             <span id="trash">
-                <img src="Icons/trash.png" </span>
+                <img src="Icons/trash.png" alt="docker-mage"> </span>
         </div>
 
     </div>
@@ -140,15 +135,16 @@
         </p>
     </div>
     <div id="launch-pad">
-        <div class="App_Card" id="finder"><img src="Icons/finder_l.png"><br />Finder</div>
-        <div class="App_Card"><img src="Icons/cont_l.png"><br />Contacts</div>
-        <div class="App_Card"><img src="Icons/msg_l.png"><br />Messages</div>
-        <div class="App_Card"><img src="Icons/safari.png"><br />Safari</div>
-        <div class="App_Card"><img src="Icons/pht_l.png"><br />Photos</div>
-        <div class="App_Card"><img src="Icons/seti_l.png"><br />Settings</div>
-        <div class="App_Card"><img src="Icons/notes_l.png"><br />iNotes</div>
-        <div class="App_Card"><img src="Icons/tv_l.png"><br />Apple TV</div>
-        <div class="App_Card"><img src="Icons/Trash_l.png"><br />Apple TV</div>
+        <div class="App_Card" id="finder"><img src="Icons/finder_l.png" alt="launchei-app icons in grid"><br />Finder
+        </div>
+        <div class="App_Card"><img id="finder" src="Icons/cont_l.png" alt="launchei-app icons in grid"><br />Contacts</div>
+        <div class="App_Card"><img src="Icons/msg_l.png" alt="launchei-app icons in grid"><br />Messages</div>
+        <div class="App_Card"><img src="Icons/safari.png" alt="launchei-app icons in grid"><br />Safari</div>
+        <div class="App_Card"><img src="Icons/pht_l.png" alt="launchei-app icons in grid"><br />Photos</div>
+        <div class="App_Card"><img src="Icons/seti_l.png" alt="launchei-app icons in grid"><br />Settings</div>
+        <div class="App_Card"><img src="Icons/notes_l.png" alt="launchei-app icons in grid"><br />iNotes</div>
+        <div class="App_Card"><img src="Icons/tv_l.png" alt="launchei-app icons in grid"><br />Apple TV</div>
+        <div class="App_Card"><img src="Icons/Trash_l.png" alt="launchei-app icons in grid"><br />Trash</div>
     </div>
 
 </body>

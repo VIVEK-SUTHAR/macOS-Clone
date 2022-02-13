@@ -1,5 +1,7 @@
 //jQuery is used in this js 
 
+var pass = document.querySelector("#pwd").value;
+let lauch_count = 0; 
 
 setTimeout(function () {
     const current = new Date();
@@ -10,11 +12,10 @@ setTimeout(function () {
     document.getElementById('time').innerHTML = time;
 }, 100);
 $('#enter').click(function () {
-    $('#log_in').fadeOut(300);
+    $('#log_in').fadeOut(500);
     $('#container').css("display", "block")
     $('#container').css("bottom", "0")
 })
-let lauch_count = 0;
 //finder dropdown when clicked on finder dropdown will be displayed44
 
 $('#finder-dropdown-btn').click(function () {
