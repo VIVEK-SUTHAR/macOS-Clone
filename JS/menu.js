@@ -1,4 +1,6 @@
 //jQuery is used in this js 
+
+
 setTimeout(function () {
     const current = new Date();
     const time = current.toLocaleTimeString("en-US", {
