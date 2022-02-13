@@ -1,4 +1,17 @@
 //jQuery is used in this js 
+setTimeout(function () {
+    const current = new Date();
+    const time = current.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+    });
+    document.getElementById('time').innerHTML = time;
+}, 100);
+$('#enter').click(function () {
+    $('#log_in').fadeOut(300);
+    $('#container').css("display", "block")
+    $('#container').css("bottom", "0")
+})
 let lauch_count = 0;
 //finder dropdown when clicked on finder dropdown will be displayed44
 
@@ -92,9 +105,9 @@ function showLauncher() {
 }
 $('#search_bar').click(function () {
     $('#search_form').css("display", "block");
+    $('#search_form').addClass("animate__slideInUp");
     $('#search_form').css("left", "34%");
     $('#search_form').css("top", "25%");
-    $('#search_form').addClass("animate__slideInUp");
 
 
 })
