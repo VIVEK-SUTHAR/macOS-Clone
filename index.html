@@ -15,12 +15,17 @@
     <link rel="STYLESHEET" href="CSS/nav.css">
     <link rel="STYLESHEET" href="CSS/launch-pad.css">
     <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+        <script src="https://cdn.tutorialjinni.com/jquery-resize/1.1/jquery.ba-resize.js"></script>
 </head>
 
 <body>
     <div class="main">
         <div id="back">
-            <img id="primarybg" src="bg.jpg" alt="Background image"></img>
+            <img id="primarybg" src="back.jpg" alt="Background image"></img>
         </div>
         <header>
             <img src="menu.jpg.png" alt="menubar">
@@ -86,7 +91,7 @@
             </span><br>AirPlay<br>Display</div>
     </div>
     <!--All the application code-->
-    <div id="finder-app" class="animate__animated">
+    <div id="finder-app" class="animate__animated ui-widget-content  ui-widget-header" >
         <div id="upframe">
             <div id="close"></div>
             <div id="minimize"></div>
@@ -101,16 +106,29 @@
         <div class="App_Card"><img src="Icons/finder_l.png" alt="launchei-app icons in grid">Finder
         </div>
         <div class="App_Card"><img src="Icons/cont_l.png" alt="launchei-app icons in grid">Contacts</div>
-        <div class="App_Card"><img src="Icons/msg_l.png" alt="launchei-app icons in grid">Messages</div>
+        <div class="App_Card"><img src="Icons/maps.png" alt="launchei-app icons in grid">Maps</div>
+        <div class="App_Card"><img src="Icons/mail.png" alt="launchei-app icons in grid">Mail</div>
+        <div class="App_Card"><img src="Icons/facetime.png" alt="launchei-app icons in grid">Face Time</div>
+        <div class="App_Card"><img src="Icons/messages.png" alt="launchei-app icons in grid">Messages</div>
+        <div class="App_Card"><img src="Icons/books.png" alt="launchei-app icons in grid">Books</div>
+        <div class="App_Card"><img src="Icons/news.png " alt="launchei-app icons in grid">News</div>
         <div class="App_Card"><img src="Icons/safari.png" alt="launchei-app icons in grid">Safari</div>
         <div class="App_Card"><img src="Icons/pht_l.png" alt="launchei-app icons in grid">Photos</div>
-        <div class="App_Card"><img src="Icons/seti_l.png" alt="launchei-app icons in grid">Settings</div>
+        <div class="App_Card"><img src="Icons/set.png" alt="launchei-app icons in grid">Settings</div>
         <div class="App_Card"><img src="Icons/notes_l.png" alt="launchei-app icons in grid">iNotes</div>
         <div class="App_Card"><img src="Icons/tv_l.png" alt="launchei-app icons in grid">Apple TV</div>
         <div class="App_Card"><img src="Icons/Trash_l.png" alt="launchei-app icons in grid">Trash</div>
+        <div class="App_Card"><img src="Icons/music.png" alt="launchei-app icons in grid">Apple Music</div>
+        <div class="App_Card"><img src="Icons/app_store.svg" alt="launchei-app icons in grid">App Store</div>
+        <div class="App_Card"><img src="Icons/keynote.png" alt="launchei-app icons in grid">Key Notes</div>
+        <div class="App_Card"><img src="Icons/siri.png" alt="launchei-app icons in grid">Siri</div>
+        <div class="App_Card"><img src="Icons/onenote.png" alt="launchei-app icons in grid">Onenote</div>
+        <div class="App_Card"><img src="Icons/terminal.png" alt="launchei-app icons in grid">Terminal</div>
+        <div class="App_Card"><img src="Icons/stocks.png" alt="launchei-app icons in grid">Stocks</div>
+        <div class="App_Card"><img src="Icons/calc.png" alt="launchei-app icons in grid">Calculator</div>
+        <div class="App_Card"><img src="Icons/find.png" alt="launchei-app icons in grid">Find My</div>
+        <div class="App_Card"><img src="Icons/dict.png" alt="launchei-app icons in grid">Dicitonary</div>
     </div>
-
-
     <div id="dock-container">
         <div id="dock">
             <ul>
@@ -123,12 +141,29 @@
                     <img src="/launch.png" />
                 </li>
                 <li>
+                <li id="launch">
+                    <span>Mail</span>
+                    <img src="Icons/mail.png" />
+                </li>
+                <li id="launch">
+                    <span>Face Time</span>
+                    <img src="Icons/facetime.png" />
+                </li>
+                <li id="launch">
+                    <span>Maps</span>
+                    <img src="Icons/maps.png" />
+                </li>
+                <li>
                     <span>Safari</span>
                     <a href="#"><img src="Icons/safari.png" /></a>
                 </li>
                 <li>
                     <span>Contacts</span>
                     <a href="#"><img src="Icons/cont.png" /></a>
+                </li>
+                <li>
+                    <span>Calender</span>
+                    <a href="#"><img src="Icons/cal.png" /></a>
                 </li>
                 <li>
                     <span>iMessages</span>
@@ -143,12 +178,42 @@
                     <a href="#"><img src="Icons/photos.png" /></a>
                 </li>
                 <li>
-                    <span>Preferences</span>
-                    <a href="#"><img src="Icons/set.png" /></a>
-                </li>
-                <li>
                     <span>Apple TV</span>
                     <a href="#"><img src="Icons/tv.png" /></a>
+                </li>
+                <li>
+                    <span>Music</span>
+                    <a href="#"><img src="Icons/music.png" /></a>
+                </li>
+                <li>
+                    <span>Podcats</span>
+                    <a href="#"><img src="Icons/pod.png" /></a>
+                </li>
+                <li>
+                    <span>Terminal</span>
+                    <a href="#"><img src="Icons/terminal.png" /></a>
+                </li>
+
+
+                <li>
+                    <span>Keynotes</span>
+                    <a href="#"><img src="Icons/keynote.png" /></a>
+                </li>
+                <li>
+                    <span>Numbers</span>
+                    <a href="#"><img src="Icons/numbers.png" /></a>
+                </li>
+                <li>
+                    <span>Pages</span>
+                    <a href="#"><img src="Icons/pages.png" /></a>
+                </li>
+                <li>
+                    <span>App Store</span>
+                    <a href="#"><img src="Icons/app_store.svg" /></a>
+                </li>
+                <li>
+                    <span>Preferences</span>
+                    <a href="#"><img src="Icons/set.png" /></a>
                 </li>
                 <li>
                     <span>Trash</span>

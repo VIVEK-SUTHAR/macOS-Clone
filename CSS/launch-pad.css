@@ -5,30 +5,31 @@
     width: 100vw;
     color: aliceblue;
     display: grid;
-    grid-template-columns: repeat(5, 0.2fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat( 6,0.2fr);
+    grid-template-rows: repeat(5, 1fr);
     top: -100%;
     transition: all 0.3s ease-in-out;
     place-items: left;
     place-content: center;
     place-self: center;
     text-align: center;
+
 }
 
 .App_Card {
     position: relative;
-   left: 20%;
+   left: 0%;
     top: 0%;
     display: none;
     font-size: 20px;
     text-align: center;
-    padding: 5%;
+    padding: 0%;
 }
 
 .App_Card img {
     display: block;
     width: 76px;
-    margin-left: 35%;
+    margin-left: 36%;
     margin-top: 5%;
     text-align: center;
     transition: all 0.2s ease-in-out;

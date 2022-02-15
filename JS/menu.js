@@ -1,5 +1,8 @@
 //jQuery is used in this js 
-
+$(function () {
+    $('#finder-app').resizable();
+    $('#finder-app').draggable();
+});
 
 var pass = document.querySelector("#pwd").value;
 let lauch_count = 0;
@@ -46,8 +49,14 @@ $('#close').click(function () {
     $('#finder_dot').css("display", "none");
     $("#container").css("bottom", "0px");
     $('#ter_til').css("display", "none");
-    $('#dock-container').css("height","50px")
-    $('#dock-container li img').css("height","48px")
+    $('#dock-container').css("height", "50px")
+    $('#dock-container li img').css("height", "48px")
+    $('#dock-container li img').css("width", "48px")
+    $("#finder-app").css("border", "none");
+    $('#dock-container').css("width", "73%")
+    $('#dock-container').css("left", "15%")
+
+
 });
 $("#maximize").click(function () {
     $("#container").css("bottom", "-800px");
@@ -56,16 +65,19 @@ $("#maximize").click(function () {
 let count_app = 0;
 $("#maximize").click(function () {
     if (count_app == 0) {
-        $("#finder-app").css("left", "0.01px");
+        $("#finder-app").css("left", "0.001px");
         $("#finder-app").css("top", "21.8px");
-        $("#finder-app").css("width", "99.999999999%");
+        $("#finder-app").css("width", "99.9%");
         $("#finder-app").css("height", "91vh");
         $("#finder-app").css("border-radius", "10px");
         $("#finder-app").css("transition", "all 0.8s ease-in-out");
+        $("#finder-app").css("border", "0.5px solid #fff");
         $("#upframe").css("background-color", "#121212");
-    
-    $('#dock-container').css("height","40px")
-    $('#dock-container li img').css("height","40px")
+        $('#dock-container').css("height", "40px")
+        $('#dock-container').css("width", "max-content")
+        $('#dock-container').css("left", "20%")
+        $('#dock-container li img').css("height", "40px")
+        $('#dock-container li img').css("width", "40px")
     }
     count_app++;
 });
@@ -80,6 +92,13 @@ $("#minimize").click(function () {
         $('#finder-app').css("left", "380px");
         $('#finder-app').css("top", "100px");
         $('#finder-app').css("border-radius", "15px");
+        $('#dock-container').css("height", "50px")
+        $('#dock-container li img').css("height", "48px")
+        $('#dock-container li img').css("width", "48px")
+        $('#dock-container').css("width", "73%")
+        $("#finder-app").css("border", "none");
+        $('#dock-container').css("left", "15%")
+
         count_app = 0;
     }
     $('#finder_dot').css("background-color", "black");
