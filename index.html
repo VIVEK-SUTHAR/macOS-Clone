@@ -41,10 +41,10 @@
                     <li>Help</li>
                     <div id="right-nav">
                         <ul>
-                            <li>battery</li>
-                            <li>wifi</li>
-                            <li>search</li>
-                            <li><img src="Icons/airdrop.png" /></li>
+                            <li><img src="Icons/bt.png"></li>
+                            <li><img src="Icons/wifi.png"></li>
+                            <li><img src="Icons/search.png"></li>
+                            <li><img src="Icons/cc.png" /></li>
                             <li><img src="Icons/siri.png" /></li>
                             <div id="day"></div>
                         </ul>
@@ -91,27 +91,17 @@
         </ul>
     </div>
     <button id="controls-tab-btn" name="controls"></button>
-    <div id="control-tab">System
-        <div id="wifi">
-            <span class="material-icons">
-                wifi
-            </span> WiFi
-            <br><br>
-            <span class="material-icons">
-                bluetooth
-            </span> BlueTooth<br><br>
-            <img src="Icons/airdrop.png" alt="image of airdrop  "> AirDrop
-        </div>
-        <div id="dnd"><span class="material-icons">
-                do_not_disturb
-            </span> Do Not Disturb</div>
-        <div id="kbddis"><span class="material-icons">
-                keyboard
-            </span><br>Keyboard<br>Brightness</div>
-        <div id="airplay"><span class="material-icons">
-                airplay
-            </span><br>AirPlay<br>Display</div>
+    <div id="control-tab">
+        <div id="dnd"><span class="material-icons">moon</span>Do Not Disturb</div>
+        <ul>
+            <li><span class="material-icons">wifi</span>Wifi</li>
+            <li><span class="material-icons">bluetooth</span>Bluetooth</li>
+            <li><span class="material-icons"></span>Airdrop</li>
+        </ul>
+        <div class="display">Display<br><progress max="100" value="95"></progress></div>
+        <div class="display">Sound<br><progress max="100" value="95"></progress></div>
     </div>
+
     <!--All the application code-->
     <div id="finder-app" class="animate__animated ui-widget-content">
         <div id="upframe" y>

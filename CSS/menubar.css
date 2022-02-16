@@ -31,7 +31,7 @@
 
 #search_bar {
     position: absolute;
-    margin-left: 83.4%;
+    margin-left: 82%;
     top: 0;
     width: 35px;
     height: 21px;
@@ -85,14 +85,12 @@
     border: 0;
     position: absolute;
     height: 19px;
-    width: 60px;
+    width: 50px;
     top: 2px;
-    left: 50px;
+    left: 30px;
     border-radius: 1px;
     background-color: transparent;
     z-index: 999999999999999999999;
-
-
 }
 
 #ter_til {
@@ -111,7 +109,7 @@
     background-color: rgba(0, 0, 0, 0);
     width: 25px;
     height: 21px;
-    left: 1310px;
+    left: 1300px;
     border: none;
     cursor: pointer;
 
@@ -122,64 +120,90 @@
     position: absolute;
     height: 400px;
     width: 440px;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.219);
+    backdrop-filter: blur(100px);
     left: 1000px;
     top: 3%;
     border-radius: 10px;
-    font-size: 22px;
+    font-size: 24px;
     padding-left: 15px;
+    font-weight: 550;
     z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    text-align: center;
 
 }
 
 #wifi {
     position: absolute;
-    font-size: 15px;
-    display: block;
-    height: 125px;
+}
+
+#control-tab ul {
+    width: 170px;
+    background-color: rgba(240, 248, 255, 0.26);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#control-tab ul li {
+    padding: 5px 10px;
+    margin-top: 5px;
     width: 150px;
-    padding-left: 15px;
-    border-radius: 15px;
-    padding-top: 10px;
-    background-color: #e7e1e16c;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 550;
+
 }
 
-#wifi:hover, #dnd:hover, #kbddis:hover, #airplay:hover {
-    background-color: #e7e1e18c;
-}
-
-#control-tab #wifi img {
-    width: 20px;
-}
-
-#dnd {
-    position: absolute;
-    width: 210px;
-    height: 35px;
-    left: 200px;
-    background-color: #e7e1e16c;
-    border-radius: 10px;
-    padding-left: 12px;
-}
-
-#kbddis {
-    position: absolute;
-    left: 200px;
-    margin-top: 45px;
-    width: 110px;
-    border-radius: 10px;
-    background-color: #e7e1e16c;
+#control-tab ul li span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 68, 255, 0.938);
     padding-left: 5px;
+    padding-top: 4px;
+    margin-right: 15px;
+}
+#dnd{
+    position:absolute;
+    width: 170px;
+    height: 100px;
+    background-color: #e9e9e988;
+    left: 240px;
+    top: 10px;
+    border-radius: 10px;
+    text-align: left;
+   margin-left: 0px;    
+   font-size: 24px;
+   padding-top: 2px;
+}
+#dnd span{
+    position:relative;
+    height: 50px;
+    width: 50px;
 }
 
-#airplay {
-    position: absolute;
-    left: 325px;
-    margin-top: 45px;
-    background-color: #e7e1e16c;
+.display{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.219);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 10px;
-    width: 100px;
-    padding-left: 10px;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-top: 10px;
 
+}
+.display progress{
+    width: 390px;
+    height: 50px;
+    accent-color: white;
 }
