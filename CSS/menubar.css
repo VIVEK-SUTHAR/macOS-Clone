@@ -1,19 +1,21 @@
 #finder-dropdown {
-    overflow: hidden;
     display: none;
     position: relative;
     width: 140px;
     height: 200px;
     background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(255, 255, 255, 0.705); */
     margin-left: 10px;
     top: 22px;
+    border: 0.01px solid white;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     font-size: 15px;
     font-weight: bold;
     text-align: center;
     padding: 10px;
     z-index: 999999999999999999999999;
+    overflow: hidden;
 }
 
 #finder-dropdown ul {
@@ -24,7 +26,7 @@
     margin-top: 10px;
     text-align: left;
     padding: 5px;
-
+    border-radius: 2px;
 }
 
 #search_bar {
@@ -68,7 +70,7 @@
 }
 
 #finder-dropdown ul :hover {
-    background-color: rgb(57, 13, 255, 0.8);
+    background-color: rgb(0, 89, 255);
     width: 130px;
     border-radius: 5px;
 }

@@ -1,10 +1,19 @@
-//jQuery is used in this js 
+let appname=document.getElementById("App_name");
+
+var days = [
+    'Sun',
+    'Mon',
+    'Tues',
+    'Wed',
+    'Thu',
+    'Fri',
+    'Sat',
+];
+var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 $(function () {
     $('#finder-app').resizable();
     $('#finder-app').draggable();
 });
-
-var pass = document.querySelector("#pwd").value;
 let lauch_count = 0;
 
 setTimeout(function () {
@@ -14,6 +23,12 @@ setTimeout(function () {
         minute: "2-digit",
     });
     document.getElementById('time').innerHTML = time;
+    var dayn = new Date();
+    var dayName = days[dayn.getDay()];
+    var monthName = month[dayn.getMonth()];
+    var date=dayn.getDate();
+    document.getElementById('day').innerHTML = dayName+ " "+ monthName+" "+ date+"  "+time;
+
 }, 100);
 $('#enter').click(function () {
     $('#log_in').fadeOut(500);
@@ -31,7 +46,6 @@ $('.main').click(function () {
     $('#finder-dropdown').slideUp(300);
     $('#control-tab').slideUp(200);
     $('#search_form').css("display", "none");
-    $('#search_form').addClass("animate__slideOutDown");
 });
 
 $('#controls-tab-btn').click(function () {
@@ -44,6 +58,7 @@ $('#finder').click(function () {
     showFinder();
 });
 $('#close').click(function () {
+    appname.innerHTML="Finder";
     $('#finder-app').addClass("animate__zoomOut");
     $('#finder-app').slideToggle(400);
     $('#finder_dot').css("display", "none");
@@ -116,13 +131,14 @@ $(function () {
     $("#finder-app").draggable();
 });
 function showFinder() {
+    let appname=document.getElementById("App_name");
+    appname.innerHTML='Terminal';
     $('#finder-app').removeClass("animate__zoomOut");
     $('#finder-app').addClass("animate__zoomIn");
     $('#finder-app').slideToggle(80);
     $('#finder-app').css("border-radius", "8px");
     $('#finder_dot').css("display", "block");
     $('#finder_dot').css("background-color", "red");
-    $('#ter_til').css("display", "block");
 }
 function showLauncher() {
     $("#launch-pad").css("background-color", "rgba(0,0,0,0.1)");
@@ -132,12 +148,10 @@ function showLauncher() {
     $("#container").css("z-index", "999999999999");
 }
 $('#search_bar').click(function () {
-    $('#search_form').css("display", "block");
     $('#search_form').addClass("animate__slideInUp");
+    $('#search_form').css("display", "block");
     $('#search_form').css("left", "34%");
     $('#search_form').css("top", "25%");
-
-
 })
 
 

@@ -48,17 +48,15 @@
     align-self: center;
     margin-left: 40px;
     padding: 30px;
-
+    width: 40px;
 }
 
-#btns #slp img {
-    object-fit: cover;
-    width: 35px;
+
+#btns img {
+    margin-left: 4px;
 }
 
-#btns #rest {
-    width: 35px;
-}
+
 
 #log_in #user img {
     margin-top: -10%;

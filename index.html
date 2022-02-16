@@ -13,6 +13,7 @@
     <link rel="STYLESHEET" href="CSS/menubar.css">
     <link rel="STYLESHEET" href="CSS/app-finder.css">
     <link rel="STYLESHEET" href="CSS/nav.css">
+    <link rel="STYLESHEET" href="CSS/navbar.css">
     <link rel="STYLESHEET" href="CSS/launch-pad.css">
     <script src="JS/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -28,11 +29,32 @@
             <img id="primarybg" src="back.jpg" alt="Background image"></img>
         </div>
         <header>
-            <img src="menu.jpg.png" alt="menubar">
+            <nav>
+                <div id="logo"><img src="Icons/logo.png"></div>
+                <ul>
+                    <li id="App_name">Finder</li>
+                    <li>File</li>
+                    <li>Edit</li>
+                    <li>View</li>
+                    <li>Go</li>
+                    <li>Window</li>
+                    <li>Help</li>
+                    <div id="right-nav">
+                        <ul>
+                            <li>battery</li>
+                            <li>wifi</li>
+                            <li>search</li>
+                            <li><img src="Icons/airdrop.png" /></li>
+                            <li><img src="Icons/siri.png" /></li>
+                            <div id="day"></div>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
         </header>
     </div>
     <section id="log_in">
-        <div id="time">u</div>
+        <div id="time"></div>
         <div id="user"><img src="Icons/user-svgrepo-com.svg" alt="userimage">
             <form>
                 <label for="user-name">Vivek Suthar</label><br />
@@ -43,9 +65,9 @@
             </form>
         </div>
         <div id="btns">
-            <span class="btn" id="slp"><img src="Icons/slp.svg" alt="sleepbutton"> Sleep</span>
-            <span class="btn" id="rest"><img src="Icons/rst.svg" alt="restart button"> Restart</span>
-            <span class="btn" id="rest"><img src="Icons/shutdown.svg" alt="shutdown button"> ShutDown</span>
+            <span class="btn" class="slp"><img src="Icons/slp.svg" alt="sleepbutton"> Sleep</span>
+            <span class="btn" class="slp"><img src="Icons/rst.svg" alt="restart button"> Restart</span>
+            <span class="btn" class="slp"><img src="Icons/shutdown.svg" alt="shutdown button"> ShutDown</span>
         </div>
     </section>
     <button id="finder-dropdown-btn" onclick="showNav()">
@@ -91,8 +113,8 @@
             </span><br>AirPlay<br>Display</div>
     </div>
     <!--All the application code-->
-    <div id="finder-app" class="animate__animated ui-widget-content  ui-widget-header">
-        <div id="upframe">
+    <div id="finder-app" class="animate__animated ui-widget-content">
+        <div id="upframe" y>
             <div id="close"></div>
             <div id="minimize"></div>
             <div id="maximize"></div>
@@ -102,6 +124,7 @@
             <input type="text" onsubmit="showResult()" />
         </p>
     </div>
+
     <div id="launch-pad">
         <div class="App_Card"><img src="Icons/finder_l.png" alt="launchei-app icons in grid">Finder
         </div>
@@ -129,16 +152,21 @@
         <div class="App_Card"><img src="Icons/find.png" alt="launchei-app icons in grid">Find My</div>
         <div class="App_Card"><img src="Icons/dict.png" alt="launchei-app icons in grid">Dicitonary</div>
     </div>
+    /*----------------Docker Start from here-----------------------*/
     <div id="dock-container">
         <div id="dock">
             <ul>
-                <li id="finder">
+                <li>
                     <span>Finder</span>
                     <img src="Icons/finder_l.png" />
                 </li>
                 <li id="launch">
                     <span>Launch-pad</span>
                     <img src="launch.png" />
+                </li>
+                <li id="finder">
+                    <span>Terminal</span>
+                    <img src="Icons/terminal.png" />
                 </li>
                 <li>
                 <li id="launch">
@@ -190,10 +218,6 @@
                     <a href="#"><img src="Icons/pod.png" /></a>
                 </li>
                 <li>
-                    <span>Terminal</span>
-                    <a href="#"><img src="Icons/terminal.png" /></a>
-                </li>
-                <li>
                     <span>Keynotes</span>
                     <a href="#"><img src="Icons/keynote.png" /></a>
                 </li>
@@ -220,28 +244,7 @@
             </ul>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /*----------------Docker Ends here----------------------------*/
 
 </body>
 <script src="JS/menu.js"></script>

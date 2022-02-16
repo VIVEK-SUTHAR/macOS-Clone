@@ -47,7 +47,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   margin-bottom: 7px;
-  transition: all 0.28s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #dock-container li {
@@ -82,9 +82,11 @@ body {
   transform: scale(1.2);
   margin: 0 0.6em;
 }
-#dock-container:hover{
+
+#dock-container:hover {
   width: 75%;
 }
+
 #dock-container li span {
   display: none;
   position: absolute;
@@ -92,13 +94,16 @@ body {
   left: 0;
   width: 102%;
   background-color: rgba(255, 255, 255, .5);
-  padding: 4px 0;
-  border-radius: 12px;
-  transition: all 0.3s ease-in-out;
+  padding: 0px 5px;
+  border-radius: 5px;
+  transition: all 0.8s ease-in-out;
 
 }
 
 #dock-container li:hover span {
+  bottom: 85px;
+
   display: block;
   color: #fff;
+  width: max-content;
 }
