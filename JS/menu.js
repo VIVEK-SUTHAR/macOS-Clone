@@ -162,4 +162,22 @@ $('#range').change(function () {
 });
 $('#srange').change(function () {
     let x = sr.html("Sound:" + this.value + "%");
-}); 
+});
+
+
+
+//Code For Control-tab Buttons
+let btn_counter = 0;
+$('.ct_btn').click(function () {
+    if (btn_counter == 0) {
+        $('#control-tab ul li span').css("background-color", "white")
+        $('#control-tab ul li span  ').css("color", "black")
+        btn_counter++;
+    }
+    else if(btn_counter==1){
+        $('#control-tab ul li span').css("background-color", "rgba(0, 68, 255, 0.938)")
+        $('#control-tab ul li span  ').css("color", "rgb(255,255,255)")
+    }
+    // $('#control-tab ul li span').css("background-color", "white")
+    // $('#control-tab ul li span  ').css("color", "black")
+})
