@@ -92,14 +92,18 @@
     </div>
     <button id="controls-tab-btn" name="controls"></button>
     <div id="control-tab">
-        <div id="dnd"><span class="material-icons">moon</span>Do Not Disturb</div>
+        <div id="dnd"><span><img src="Icons/dnd.png">Do Not<br>Disturb</div></span>
         <ul>
             <li><span class="material-icons">wifi</span>Wifi</li>
             <li><span class="material-icons">bluetooth</span>Bluetooth</li>
-            <li><span class="material-icons"></span>Airdrop</li>
+            <li><span class="material-icons"><img src="Icons/airdrop.png"></span>Airdrop</li>
         </ul>
-        <div class="display">Display<br><progress max="100" value="95"></progress></div>
-        <div class="display">Sound<br><progress max="100" value="95"></progress></div>
+        <div class="kbd_dis" id="kbd"><img src="Icons/kbd.png"><br>Keyboard Brightness</div>
+        <div class="kbd_dis" id="airplay"><img src="Icons/airplay.png"><br>Airplay Display</div>
+        <div class="display"><span id="dv">Display:95%</span><br><input id="range" type="range" max="100" min="0"
+                value="95"></div>
+        <div class="display"><span id="sv">Sound:10%</span><br><input id="srange" type="range" max="100" min="0"
+                value="10"></div>
     </div>
 
     <!--All the application code-->

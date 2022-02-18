@@ -1,4 +1,4 @@
-let appname=document.getElementById("App_name");
+let appname = document.getElementById("App_name");
 
 var days = [
     'Sun',
@@ -26,8 +26,8 @@ setTimeout(function () {
     var dayn = new Date();
     var dayName = days[dayn.getDay()];
     var monthName = month[dayn.getMonth()];
-    var date=dayn.getDate();
-    document.getElementById('day').innerHTML = dayName+ " "+ monthName+" "+ date+"  "+time;
+    var date = dayn.getDate();
+    document.getElementById('day').innerHTML = dayName + " " + monthName + " " + date + "  " + time;
 
 }, 100);
 $('#enter').click(function () {
@@ -58,7 +58,7 @@ $('#finder').click(function () {
     showFinder();
 });
 $('#close').click(function () {
-    appname.innerHTML="Finder";
+    appname.innerHTML = "Finder";
     $('#finder-app').addClass("animate__zoomOut");
     $('#finder-app').slideToggle(400);
     $('#finder_dot').css("display", "none");
@@ -131,8 +131,8 @@ $(function () {
     $("#finder-app").draggable();
 });
 function showFinder() {
-    let appname=document.getElementById("App_name");
-    appname.innerHTML='Terminal';
+    let appname = document.getElementById("App_name");
+    appname.innerHTML = 'Terminal';
     $('#finder-app').removeClass("animate__zoomOut");
     $('#finder-app').addClass("animate__zoomIn");
     $('#finder-app').slideToggle(80);
@@ -155,3 +155,11 @@ $('#search_bar').click(function () {
 })
 
 
+var rd = $('#dv');
+var sr = $('#sv');
+$('#range').change(function () {
+    let x = rd.html("Display:" + this.value + "%");
+});
+$('#srange').change(function () {
+    let x = sr.html("Sound:" + this.value + "%");
+}); 
