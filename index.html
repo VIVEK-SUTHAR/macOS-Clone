@@ -14,6 +14,7 @@
     <link rel="STYLESHEET" href="CSS/app-finder.css">
     <link rel="STYLESHEET" href="CSS/nav.css">
     <link rel="STYLESHEET" href="CSS/navbar.css">
+    <link rel="STYLESHEET" href="CSS/terminal.css">
     <link rel="STYLESHEET" href="CSS/launch-pad.css">
     <script src="JS/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -90,6 +91,20 @@
             <li>About Mac</li>
         </ul>
     </div>
+    <div id="apple_menu">
+        <ul>
+            <li>About This Mac</li>
+            <li>System Preferences</li>
+            <li>App Store</li>
+            <li>Recent Items</li>
+            <li>Force Quit Finder</li>
+            <li>Sleep</li>
+            <li>Restart..</li>
+            <li>Shut Down...</li>
+            <li>Lock Screen</li>
+            <li>Log Out..</li>
+        </ul>
+    </div>
     <button id="controls-tab-btn" name="controls"></button>
     <div id="control-tab">
         <div id="dnd"><span><img src="Icons/dnd.png">Do Not<br>Disturb</div></span>
@@ -105,7 +120,6 @@
         <div class="display"><span id="sv">Sound:10%</span><br><input id="srange" type="range" max="100" min="0"
                 value="10"></div>
     </div>
-
     <!--All the application code-->
     <div id="finder-app" class="animate__animated ui-widget-content">
         <div id="upframe" y>
@@ -118,7 +132,32 @@
             <input type="text" onsubmit="showResult()" />
         </p>
     </div>
-    /*-----------Launch-Pad Starts from here*/
+    <div id="terminal" class="animate__animated">
+        <div class="sidepen">
+            <div class="side-wrapper">
+                <div class="close"></div>
+                <div class="minimize" aria-disabled="true"></div>
+                <div class="maximize"></div>
+            </div>
+            <div class="side-bar">
+                <ul>Favourites
+                    <li>AirDrop</li>
+                    <li>Recents</li>
+                    <li>Applications</li>
+                    <li>Desktop</li>
+                    <li>Documents</li>
+                    <li>Downloads</li>
+                </ul>
+              
+            </div>
+        </div>
+        <div class="main-screen">
+            <div class="upper-bar"></div>
+        </div>
+
+    </div>
+    <!-- All Application Ends here  -->
+    <!-- /*-----------Launch-Pad Starts from here*/ -->
     <div id="launch-pad">
         <div class="App_Card"><img src="Icons/finder_l.png" alt="launchei-app icons in grid">Finder
         </div>
@@ -146,13 +185,13 @@
         <div class="App_Card"><img src="Icons/find.png" alt="launchei-app icons in grid">Find My</div>
         <div class="App_Card"><img src="Icons/dict.png" alt="launchei-app icons in grid">Dicitonary</div>
     </div>
-    /*-----------Launch-Pad End here*/
+    <!-- /*-----------Launch-Pad End here*/
 
-    /*----------------Docker Start from here-----------------------*/
+    /*----------------Docker Start from here-----------------------*/ -->
     <div id="dock-container">
         <div id="dock">
             <ul>
-                <li>
+                <li id="terminal-app">
                     <span>Finder</span>
                     <img src="Icons/finder_l.png" />
                 </li>
@@ -240,10 +279,10 @@
             </ul>
         </div>
     </div>
-    /*----------------Docker Ends here----------------------------*/
+    <!-- /*----------------Docker Ends here----------------------------*/ -->
 
 </body>
-/*----Javascript At End Of Body Tag---This Script Contains All Functions Which Controls This macOS Web Clone😊*/
+<!-- /*----Javascript At End Of Body Tag---This Script Contains All Functions Which Controls This macOS Web Clone😊*/ -->
 <script src="JS/menu.js"></script>
 
 </html>

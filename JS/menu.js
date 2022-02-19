@@ -1,3 +1,4 @@
+var OPEN_APP_COUNTER=0;
 let appname = document.getElementById("App_name");
 
 var days = [
@@ -15,7 +16,6 @@ $(function () {
     $('#finder-app').draggable();
 });
 let lauch_count = 0;
-
 setTimeout(function () {
     const current = new Date();
     const time = current.toLocaleTimeString("en-US", {
@@ -38,14 +38,16 @@ $('#enter').click(function () {
 //finder dropdown when clicked on finder dropdown will be displayed44
 
 $('#finder-dropdown-btn').click(function () {
+    $('#apple_menu').fadeOut(100);
     $('#finder-dropdown').slideToggle(400);
     $('#control-tab').fadeOut(100);
 });
 //when clicked on desktop image finder dropdown will be hidden
-$('.main').click(function () {
+$('.main img').click(function () {
     $('#finder-dropdown').slideUp(300);
     $('#control-tab').slideUp(200);
     $('#search_form').css("display", "none");
+    $('#apple_menu').slideUp(200);
 });
 
 $('#controls-tab-btn').click(function () {
@@ -58,6 +60,7 @@ $('#finder').click(function () {
     showFinder();
 });
 $('#close').click(function () {
+    OPEN_APP_COUNTER--;
     appname.innerHTML = "Finder";
     $('#finder-app').addClass("animate__zoomOut");
     $('#finder-app').slideToggle(400);
@@ -87,7 +90,7 @@ $("#maximize").click(function () {
         $("#finder-app").css("border-radius", "10px");
         $("#finder-app").css("transition", "all 0.8s ease-in-out");
         $("#finder-app").css("border", "0.5px solid #fff");
-        $("#upframe").css("background-color", "#121212");
+        $("#upframe").css("background-color", "#242423");
         $('#dock-container').css("height", "40px")
         $('#dock-container').css("width", "max-content")
         $('#dock-container').css("left", "20%")
@@ -129,16 +132,16 @@ $("#launch-pad").click(function () {
 
 $(function () {
     $("#finder-app").draggable();
+    $("#terminal").draggable();
 });
 function showFinder() {
+    OPEN_APP_COUNTER++;
     let appname = document.getElementById("App_name");
     appname.innerHTML = 'Terminal';
     $('#finder-app').removeClass("animate__zoomOut");
     $('#finder-app').addClass("animate__zoomIn");
     $('#finder-app').slideToggle(80);
     $('#finder-app').css("border-radius", "8px");
-    $('#finder_dot').css("display", "block");
-    $('#finder_dot').css("background-color", "red");
 }
 function showLauncher() {
     $("#launch-pad").css("background-color", "rgba(0,0,0,0.1)");
@@ -174,10 +177,34 @@ $('.ct_btn').click(function () {
         $('#control-tab ul li span  ').css("color", "black")
         btn_counter++;
     }
-    else if(btn_counter==1){
+    else if (btn_counter == 1) {
         $('#control-tab ul li span').css("background-color", "rgba(0, 68, 255, 0.938)")
         $('#control-tab ul li span  ').css("color", "rgb(255,255,255)")
     }
     // $('#control-tab ul li span').css("background-color", "white")
     // $('#control-tab ul li span  ').css("color", "black")
 })
+
+
+
+// code for apple_logo drop-down menu 
+$('#logo').click(function () {
+    $('#apple_menu').slideToggle(400);
+})
+
+
+//code for closing and opening Finder App
+$('#terminal-app').click(function () {
+    OPEN_APP_COUNTER++;
+    $('#terminal').removeClass("animate__zoomOut");
+    $('#terminal').addClass("animate__zoomIn");
+    $('#terminal').css("display", "block");
+
+})
+$('.close').click(function () {
+    OPEN_APP_COUNTER--;
+    $('#terminal').addClass("animate__zoomOut");
+
+})
+
+
