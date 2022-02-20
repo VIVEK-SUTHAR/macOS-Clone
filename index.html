@@ -15,6 +15,7 @@
     <link rel="STYLESHEET" href="CSS/nav.css">
     <link rel="STYLESHEET" href="CSS/navbar.css">
     <link rel="STYLESHEET" href="CSS/terminal.css">
+    <link rel="STYLESHEET" href="CSS/about_mac.css">
     <link rel="STYLESHEET" href="CSS/launch-pad.css">
     <script src="JS/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -34,7 +35,7 @@
                 <div id="logo"><img src="Icons/logo.png"></div>
                 <ul>
                     <li id="App_name">Finder</li>
-                    <li>File</li>
+                    <li id="file_menu_btn">File</li>
                     <li>Edit</li>
                     <li>View</li>
                     <li>Go</li>
@@ -82,18 +83,9 @@
             <input type="text" autofocus="on" value="" />
         </form>
     </div>
-    <div id="finder-dropdown">
-        <ul>
-            <li>About Finder</li>
-            <li>Preferences</li>
-            <li>Services</li>
-            <li>Setting </li>
-            <li>About Mac</li>
-        </ul>
-    </div>
     <div id="apple_menu">
         <ul>
-            <li>About This Mac</li>
+            <li id="about_mac_btn">About This Mac</li>
             <li>System Preferences</li>
             <li>App Store</li>
             <li>Recent Items</li>
@@ -103,6 +95,36 @@
             <li>Shut Down...</li>
             <li>Lock Screen</li>
             <li>Log Out..</li>
+        </ul>
+    </div>
+    <div id="finder-dropdown">
+        <ul>
+            <li>About Finder</li>
+            <li>Preferences</li>
+            <li>Services</li>
+            <li>Setting </li>
+            <li>About Mac</li>
+        </ul>
+    </div>
+    <div id="file_menu">
+        <ul>
+            <li>New Finder Window</li>
+            <li>New Folder</li>
+            <li>New Smart Folder</li>
+            <li>New Tab</li>
+            <li>Open</li>
+            <li>Open With</li>
+            <li>Print</li>
+            <li>Close Window</li>
+            <li>Close WindowGet Info</li>
+            <li>Rename</li>
+            <li>Compress</li>
+            <li>Duplicate</li>
+            <li>Make Alias</li>
+            <li>Quick Look</li>
+            <li>Move To Trash</li>
+            <li>Eject</li>
+            <li>FInd</li>
         </ul>
     </div>
     <button id="controls-tab-btn" name="controls"></button>
@@ -122,6 +144,33 @@
     </div>
     <!--All the application code-->
     <!-- This Is terminal app ,Wrongly named as finder-app -->
+    <div id="about_mac" class="animate__animated">
+        <div class="up_frame">
+            <div class="up-wrapper">
+                <div class="close"></div>
+                <div class="minimize"></div>
+                <div class="maximize"></div>
+            </div>
+            <div class="up-tab">
+                <ul>
+                    <table>
+                        <td>OverView</td>
+                        <td>Display</td>
+                        <td>Storage</td>
+                        <td>Memory</td>
+                        <td>Support</td>
+                        <td>Service</td>
+                    </table>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="Icons/big-sur.png">
+            macOS Big Sur<br />version 11.4 beta(20A876L)
+            <br/><br/>
+            <span>MacBook Air<br/>Processor 1.89GHz<br/>Memory 12GB DRAM<br/>Graphics Display 3 MB<br/>Serial No 586478OPIUT</span>
+        </div>
+    </div>
     <div id="finder-app" class="animate__animated ui-widget-content">
         <div id="upframe" y>
             <div id="close"></div>
@@ -150,7 +199,7 @@
                     <li>Documents</li>
                     <li>Downloads</li>
                 </ul>
-              
+
             </div>
         </div>
         <div class="main-screen">

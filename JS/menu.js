@@ -1,4 +1,4 @@
-var OPEN_APP_COUNTER=0;
+var OPEN_APP_COUNTER = 0;
 let appname = document.getElementById("App_name");
 
 var days = [
@@ -11,10 +11,7 @@ var days = [
     'Sat',
 ];
 var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-$(function () {
-    $('#finder-app').resizable();
-    $('#finder-app').draggable();
-});
+
 let lauch_count = 0;
 setTimeout(function () {
     const current = new Date();
@@ -41,6 +38,8 @@ $('#finder-dropdown-btn').click(function () {
     $('#apple_menu').fadeOut(100);
     $('#finder-dropdown').slideToggle(400);
     $('#control-tab').fadeOut(100);
+    $('#file_menu').slideUp(200);
+
 });
 //when clicked on desktop image finder dropdown will be hidden
 $('.main img').click(function () {
@@ -48,6 +47,7 @@ $('.main img').click(function () {
     $('#control-tab').slideUp(200);
     $('#search_form').css("display", "none");
     $('#apple_menu').slideUp(200);
+    $('#file_menu').slideUp(100);
 });
 
 $('#controls-tab-btn').click(function () {
@@ -133,6 +133,7 @@ $("#launch-pad").click(function () {
 $(function () {
     $("#finder-app").draggable();
     $("#terminal").draggable();
+    $("#about_mac").draggable();
 });
 function showFinder() {
     OPEN_APP_COUNTER++;
@@ -189,7 +190,18 @@ $('.ct_btn').click(function () {
 
 // code for apple_logo drop-down menu 
 $('#logo').click(function () {
+    $('#file_menu').slideUp(200);
     $('#apple_menu').slideToggle(400);
+})
+
+
+
+// code for opening and closing file menu
+$('#file_menu_btn').click(function () {
+    
+    $('#file_menu').slideToggle(100);
+    $('#finder-dropdown').fadeOut(50);
+    $('#apple_menu').fadeOut(50);
 })
 
 
@@ -207,4 +219,18 @@ $('.close').click(function () {
 
 })
 
+//code for opening about mac 
+//code for closing and opening Finder App
+$('#about_mac_btn').click(function () {
+    OPEN_APP_COUNTER++;
+    $('#about_mac').removeClass("animate__zoomOut");
+    $('#about_mac').addClass("animate__zoomIn");
+    $('#about_mac').css("display", "block");
+
+})
+$('#about_mac .up_frame .up-wrapper .close').click(function () {
+    OPEN_APP_COUNTER--;
+    $('#about_mac').addClass("animate__zoomOut");
+
+})
 

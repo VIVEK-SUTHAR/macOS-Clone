@@ -332,4 +332,36 @@ input[type="range"]::selection {
     width: 155px;
     border-radius: 5px;
 }
-
+#file_menu{
+    display: none;
+    position: relative;
+    width:175px;
+    height:max-content;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 82px;
+    top: 22px;
+    border: 0.01px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    z-index: 999999999999999999999999;
+    overflow: hidden;
+}
+#file_menu ul {
+    list-style: none;
+}
+#file_menu ul li {
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 0 5px;
+}
+#file_menu ul  :hover {
+    background-color: rgb(0, 89, 255);
+    width:inherit;
+    border-radius: 5px;
+}
