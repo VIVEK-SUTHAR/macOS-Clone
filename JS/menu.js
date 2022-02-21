@@ -134,6 +134,7 @@ $(function () {
     $("#finder-app").draggable();
     $("#terminal").draggable();
     $("#about_mac").draggable();
+    $("#facetime").draggable();
 });
 function showFinder() {
     OPEN_APP_COUNTER++;
@@ -232,4 +233,39 @@ $('#about_mac .up_frame .up-wrapper .close').click(function () {
     $('#about_mac').addClass("animate__zoomOut");
 
 })
+$('#facetime-app').click(function () {
+    OPEN_APP_COUNTER++;
+    $('#facetime').removeClass("animate__zoomOut");
+    $('#facetime').addClass("animate__zoomIn");
+    $('#facetime').css("display", "block");
+    var video = document.getElementById('video');
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        // Not adding `{ audio: true }` since we only want video now
+        navigator.mediaDevices.getUserMedia({ video: true, }).then(function (stream) {
+            //video.src = window.URL.createObjectURL(stream);
+            video.srcObject = stream;
+            video.play();
+        });
+    }
+})
+$('#facetime .up-frame .close').click(function () {
+    OPEN_APP_COUNTER--;
+    $('#facetime').addClass("animate__zoomOut");
+})
+var isOn = true;
+let voff = document.querySelector("#v-off");
+$('#video-ctrl').click(function () {
+    if (isOn) {
+        $('#video').fadeToggle(450);
+        voff.src = "Icons/video-on.png";
+        isOn = false;
+    }
+    else {
+        $('#video').fadeToggle(450);
+        voff.src = "Icons/cam.png";
+    }
+})
+setInterval(() => {
+    console.log(OPEN_APP_COUNTER);
 
+}, 100)

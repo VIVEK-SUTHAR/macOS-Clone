@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="macos clone,created by vivek suthar,feel the macos in your browser">
+    <meta name="description" content="macos web clone web,created by vivek suthar,feel the macos in your browser">
     <title>macOS Clone|Big Sur Clone By Vivek Suthar|</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -16,13 +16,9 @@
     <link rel="STYLESHEET" href="CSS/navbar.css">
     <link rel="STYLESHEET" href="CSS/terminal.css">
     <link rel="STYLESHEET" href="CSS/about_mac.css">
+    <link rel="STYLESHEET" href="CSS/facetime.css">
     <link rel="STYLESHEET" href="CSS/launch-pad.css">
     <script src="JS/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
-        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
-    <script src="https://cdn.tutorialjinni.com/jquery-resize/1.1/jquery.ba-resize.js"></script>
 </head>
 
 <body>
@@ -208,6 +204,20 @@
         </div>
 
     </div>
+    <div id="facetime" class="animate__animated">
+        <div class="up-frame">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+        </div>
+        <video id="video" autoplay></video>
+        <canvas id="canvas" width="100%" height="100%"></canvas>
+        <div class="ctrl-pen">
+            <div class="btn" id="video-ctrl"><img src="Icons/cam.png" id="v-off" alt="controls"></div>
+            <div class="btn" id="cancel"><img src="Icons/cancel.png" id="v-off" alt="controls"></div>
+            <div class="btn"><img src="Icons/mute.png" alt="controls"></div>
+        </div>
+    </div>
     <!-- All Application Ends here  -->
     <!-- /*-----------Launch-Pad Starts from here*/ -->
     <div id="launch-pad">
@@ -262,7 +272,7 @@
                 </li>
                 <li id="launch">
                     <span>Face Time</span>
-                    <img src="Icons/facetime.png" />
+                    <img id="facetime-app" src="Icons/facetime.png" />
                 </li>
                 <li id="launch">
                     <span>Maps</span>
@@ -335,6 +345,11 @@
 
 </body>
 <!-- /*----Javascript At End Of Body Tag---This Script Contains All Functions Which Controls This macOS Web Clone😊*/ -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+    integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+<script src="https://cdn.tutorialjinni.com/jquery-resize/1.1/jquery.ba-resize.js"></script>
 <script src="JS/menu.js"></script>
 
 </html>
