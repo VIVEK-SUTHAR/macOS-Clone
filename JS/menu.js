@@ -198,7 +198,7 @@ $('#logo').click(function () {
 
 // code for opening and closing file menu
 $('#file_menu_btn').click(function () {
-    
+
     $('#file_menu').slideToggle(100);
     $('#finder-dropdown').fadeOut(50);
     $('#apple_menu').fadeOut(50);
@@ -218,7 +218,6 @@ $('.close').click(function () {
     $('#terminal').addClass("animate__zoomOut");
 
 })
-
 //code for opening about mac 
 //code for closing and opening Finder App
 $('#about_mac_btn').click(function () {
