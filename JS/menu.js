@@ -59,7 +59,7 @@ $('#controls-tab-btn').click(function () {
 $('#finder').click(function () {
     showFinder();
 });
-$('#close').click(function () {
+$('#finder-app #upframe #close').click(function () {
     OPEN_APP_COUNTER--;
     appname.innerHTML = "Finder";
     $('#finder-app').addClass("animate__zoomOut");
@@ -249,8 +249,8 @@ $('#facetime-app').click(function () {
     }
 })
 $('#facetime .up-frame .close').click(function () {
-    OPEN_APP_COUNTER--;
     $('#facetime').addClass("animate__zoomOut");
+    OPEN_APP_COUNTER--;
 })
 var isOn = true;
 let voff = document.querySelector("#v-off");
@@ -269,3 +269,15 @@ setInterval(() => {
     console.log(OPEN_APP_COUNTER);
 
 }, 100)
+
+document.getElementById("widget-btn").addEventListener("mouseover", mouseOver);
+function mouseOver(){
+    var widget_pen=document.getElementById("widgets_bar");
+    widget_pen.style.right="0";
+}
+document.getElementById("widgets_bar").addEventListener("mouseout", mouseOut);
+
+function mouseOut(){
+    var widget_pen=document.getElementById("widgets_bar");
+    widget_pen.style.right="-100%";
+}

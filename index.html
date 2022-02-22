@@ -16,6 +16,7 @@
     <link rel="STYLESHEET" href="CSS/navbar.css">
     <link rel="STYLESHEET" href="CSS/terminal.css">
     <link rel="STYLESHEET" href="CSS/about_mac.css">
+    <link rel="STYLESHEET" href="CSS/widgets.css">
     <link rel="STYLESHEET" href="CSS/facetime.css">
     <link rel="STYLESHEET" href="CSS/launch-pad.css">
     <script src="JS/jquery-3.6.0.min.js"></script>
@@ -68,7 +69,7 @@
             <span class="btn" class="slp"><img src="Icons/shutdown.svg" alt="shutdown button"> ShutDown</span>
         </div>
     </section>
-    <button id="finder-dropdown-btn" onclick="showNav()">
+    <button id="finder-dropdown-btn">
         <span id="ter_til">Terminal</span>
     </button>
     <button id="search_bar" name="search">
@@ -169,7 +170,7 @@
         </div>
     </div>
     <div id="finder-app" class="animate__animated ui-widget-content">
-        <div id="upframe" y>
+        <div id="upframe">
             <div id="close"></div>
             <div id="minimize"></div>
             <div id="maximize"></div>
@@ -342,7 +343,10 @@
         </div>
     </div>
     <!-- /*----------------Docker Ends here----------------------------*/ -->
+    <div id="widget-btn"></div>
+    <section id="widgets_bar">
 
+    </section>
 </body>
 <!-- /*----Javascript At End Of Body Tag---This Script Contains All Functions Which Controls This macOS Web Clone😊*/ -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"

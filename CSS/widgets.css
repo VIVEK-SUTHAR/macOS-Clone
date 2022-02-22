@@ -1,0 +1,21 @@
+#widgets_bar {
+    position: absolute;
+    height: 88vh;
+    width: 40vw;
+    top: 3.5%;
+    right: -100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#widget-btn {
+    position: absolute;
+    height: 100vh;
+    width: 1vw;
+    background-color: black;
+    right: 0;
+    z-index: 1;
+    background-color: transparent;
+}
