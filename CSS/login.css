@@ -108,3 +108,10 @@
 #log_in #submit {
     display: none;
 }
+#loader{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rosybrown;
+    z-index: 566666;
+}

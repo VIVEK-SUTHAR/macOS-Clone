@@ -23,329 +23,344 @@
 </head>
 
 <body>
-    <div class="main">
-        <div id="back">
-            <img id="primarybg" src="back.jpg" alt="Background image"></img>
+    <section id="macOS">
+        <div class="main">
+            <div id="back">
+                <img id="primarybg" src="back.jpg" alt="Background image"></img>
+            </div>
+            <header>
+                <nav>
+                    <div id="logo"><img src="Icons/logo.png"></div>
+                    <ul>
+                        <li id="App_name">Finder</li>
+                        <li id="file_menu_btn">File</li>
+                        <li>Edit</li>
+                        <li>View</li>
+                        <li>Go</li>
+                        <li>Window</li>
+                        <li>Help</li>
+                        <div id="right-nav">
+                            <ul>
+                                <li><img src="Icons/bt.png"></li>
+                                <li><img src="Icons/wifi.png"></li>
+                                <li><img src="Icons/search.png"></li>
+                                <li><img src="Icons/cc.png" /></li>
+                                <li><img src="Icons/siri.png" /></li>
+                                <div id="day"></div>
+                            </ul>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
         </div>
-        <header>
-            <nav>
-                <div id="logo"><img src="Icons/logo.png"></div>
-                <ul>
-                    <li id="App_name">Finder</li>
-                    <li id="file_menu_btn">File</li>
-                    <li>Edit</li>
-                    <li>View</li>
-                    <li>Go</li>
-                    <li>Window</li>
-                    <li>Help</li>
-                    <div id="right-nav">
-                        <ul>
-                            <li><img src="Icons/bt.png"></li>
-                            <li><img src="Icons/wifi.png"></li>
-                            <li><img src="Icons/search.png"></li>
-                            <li><img src="Icons/cc.png" /></li>
-                            <li><img src="Icons/siri.png" /></li>
-                            <div id="day"></div>
-                        </ul>
+        <section id="log_in">
+            <div id="time"></div>
+            <div id="user"><img src="Icons/user-svgrepo-com.svg" alt="userimage">
+                <form>
+                    <label for="user-name">Vivek Suthar</label><br />
+                    <input id="pwd" type="password" placeholder="Enter Password" />
+                    <img id="enter" src="Icons/right-arrow-svgrepo-com.svg" alt="enter in macos">
+                    <div style="margin-top: 10px; font-size: 15px;text-align: start;padding: 20px;">TouchID is not
+                        enabaled
                     </div>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <section id="log_in">
-        <div id="time"></div>
-        <div id="user"><img src="Icons/user-svgrepo-com.svg" alt="userimage">
+                </form>
+            </div>
+            <div id="btns">
+                <span class="btn" class="slp"><img src="Icons/slp.svg" alt="sleepbutton"> Sleep</span>
+                <span class="btn" class="slp"><img src="Icons/rst.svg" alt="restart button"> Restart</span>
+                <span class="btn" class="slp"><img src="Icons/shutdown.svg" alt="shutdown button"> ShutDown</span>
+            </div>
+        </section>
+        <button id="finder-dropdown-btn">
+            <span id="ter_til">Terminal</span>
+        </button>
+        <button id="search_bar" name="search">
+        </button>
+        <div id="search_form" class="animate__animated">
             <form>
-                <label for="user-name">Vivek Suthar</label><br />
-                <input id="pwd" type="password" placeholder="Enter Password" />
-                <img id="enter" src="Icons/right-arrow-svgrepo-com.svg" alt="enter in macos">
-                <div style="margin-top: 10px; font-size: 15px;text-align: start;padding: 20px;">TouchID is not enabaled
-                </div>
+                <label for="input">Search</label><br />
+                <input type="text" autofocus="on" value="" />
             </form>
         </div>
-        <div id="btns">
-            <span class="btn" class="slp"><img src="Icons/slp.svg" alt="sleepbutton"> Sleep</span>
-            <span class="btn" class="slp"><img src="Icons/rst.svg" alt="restart button"> Restart</span>
-            <span class="btn" class="slp"><img src="Icons/shutdown.svg" alt="shutdown button"> ShutDown</span>
+        <div id="apple_menu">
+            <ul>
+                <li id="about_mac_btn">About This Mac</li>
+                <li>System Preferences</li>
+                <li>App Store</li>
+                <li>Recent Items</li>
+                <li>Force Quit Finder</li>
+                <li>Sleep</li>
+                <li>Restart..</li>
+                <li>Shut Down...</li>
+                <li>Lock Screen</li>
+                <li>Log Out..</li>
+            </ul>
         </div>
-    </section>
-    <button id="finder-dropdown-btn">
-        <span id="ter_til">Terminal</span>
-    </button>
-    <button id="search_bar" name="search">
-    </button>
-    <div id="search_form" class="animate__animated">
-        <form>
-            <label for="input">Search</label><br />
-            <input type="text" autofocus="on" value="" />
-        </form>
-    </div>
-    <div id="apple_menu">
-        <ul>
-            <li id="about_mac_btn">About This Mac</li>
-            <li>System Preferences</li>
-            <li>App Store</li>
-            <li>Recent Items</li>
-            <li>Force Quit Finder</li>
-            <li>Sleep</li>
-            <li>Restart..</li>
-            <li>Shut Down...</li>
-            <li>Lock Screen</li>
-            <li>Log Out..</li>
-        </ul>
-    </div>
-    <div id="finder-dropdown">
-        <ul>
-            <li>About Finder</li>
-            <li>Preferences</li>
-            <li>Services</li>
-            <li>Setting </li>
-            <li>About Mac</li>
-        </ul>
-    </div>
-    <div id="file_menu">
-        <ul>
-            <li>New Finder Window</li>
-            <li>New Folder</li>
-            <li>New Smart Folder</li>
-            <li>New Tab</li>
-            <li>Open</li>
-            <li>Open With</li>
-            <li>Print</li>
-            <li>Close Window</li>
-            <li>Close WindowGet Info</li>
-            <li>Rename</li>
-            <li>Compress</li>
-            <li>Duplicate</li>
-            <li>Make Alias</li>
-            <li>Quick Look</li>
-            <li>Move To Trash</li>
-            <li>Eject</li>
-            <li>FInd</li>
-        </ul>
-    </div>
-    <button id="controls-tab-btn" name="controls"></button>
-    <div id="control-tab">
-        <div id="dnd"><span><img src="Icons/dnd.png">Do Not<br>Disturb</div></span>
-        <ul>
-            <li><span class="material-icons ct_btn">wifi</span>Wifi</li>
-            <li><span class="material-icons ct_btn">bluetooth</span>Bluetooth</li>
-            <li><span class="material-icons"><img src="Icons/airdrop.png"></span>Airdrop</li>
-        </ul>
-        <div class="kbd_dis" id="kbd"><img src="Icons/kbd.png"><br>Keyboard Brightness</div>
-        <div class="kbd_dis" id="airplay"><img src="Icons/airplay.png"><br>Airplay Display</div>
-        <div class="display"><span id="dv">Display:95%</span><br><input id="range" type="range" max="100" min="0"
-                value="95"></div>
-        <div class="display"><span id="sv">Sound:10%</span><br><input id="srange" type="range" max="100" min="0"
-                value="10"></div>
-    </div>
-    <!--All the application code-->
-    <!-- This Is terminal app ,Wrongly named as finder-app -->
-    <div id="about_mac" class="animate__animated">
-        <div class="up_frame">
-            <div class="up-wrapper">
+        <div id="finder-dropdown">
+            <ul>
+                <li>About Finder</li>
+                <li>Preferences</li>
+                <li>Services</li>
+                <li>Setting </li>
+                <li>About Mac</li>
+            </ul>
+        </div>
+        <div id="file_menu">
+            <ul>
+                <li>New Finder Window</li>
+                <li>New Folder</li>
+                <li>New Smart Folder</li>
+                <li>New Tab</li>
+                <li>Open</li>
+                <li>Open With</li>
+                <li>Print</li>
+                <li>Close Window</li>
+                <li>Close WindowGet Info</li>
+                <li>Rename</li>
+                <li>Compress</li>
+                <li>Duplicate</li>
+                <li>Make Alias</li>
+                <li>Quick Look</li>
+                <li>Move To Trash</li>
+                <li>Eject</li>
+                <li>FInd</li>
+            </ul>
+        </div>
+        <button id="controls-tab-btn" name="controls"></button>
+        <div id="control-tab">
+            <div id="dnd"><span><img src="Icons/dnd.png">Do Not<br>Disturb</div></span>
+            <ul>
+                <li><span class="material-icons ct_btn">wifi</span>Wifi</li>
+                <li><span class="material-icons ct_btn">bluetooth</span>Bluetooth</li>
+                <li><span class="material-icons"><img src="Icons/airdrop.png"></span>Airdrop</li>
+            </ul>
+            <div class="kbd_dis" id="kbd"><img src="Icons/kbd.png"><br>Keyboard Brightness</div>
+            <div class="kbd_dis" id="airplay"><img src="Icons/airplay.png"><br>Airplay Display</div>
+            <div class="display"><span id="dv">Display:95%</span><br><input id="range" type="range" max="100" min="0"
+                    value="95"></div>
+            <div class="display"><span id="sv">Sound:10%</span><br><input id="srange" type="range" max="100" min="0"
+                    value="10"></div>
+        </div>
+        <!--All the application code-->
+        <!-- This Is terminal app ,Wrongly named as finder-app -->
+        <div id="about_mac" class="animate__animated">
+            <div class="up_frame">
+                <div class="up-wrapper">
+                    <div class="close"></div>
+                    <div class="minimize"></div>
+                    <div class="maximize"></div>
+                </div>
+                <div class="up-tab">
+                    <ul>
+                        <table>
+                            <td>OverView</td>
+                            <td>Display</td>
+                            <td>Storage</td>
+                            <td>Memory</td>
+                            <td>Support</td>
+                            <td>Service</td>
+                        </table>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <img src="Icons/big-sur.png">
+                macOS Big Sur<br />version 11.4 beta(20A876L)
+                <br /><br />
+                <span>MacBook Air<br />Processor 1.89GHz<br />Memory 12GB DRAM<br />Graphics Display 3 MB<br />Serial No
+                    586478OPIUT</span>
+            </div>
+        </div>
+        <div id="finder-app" class="animate__animated ui-widget-content">
+            <div id="upframe">
+                <div id="close"></div>
+                <div id="minimize"></div>
+                <div id="maximize"></div>
+                <div class="app_finder">Terminal</div>
+            </div>
+            <p id="cmd-in">Vivek@Terminal~$<span id="cursor"></span>
+                <input type="text" onsubmit="showResult()" />
+            </p>
+        </div>
+        <!-- This Finder-App Wrongly named as terminal-app -->
+        <div id="terminal" class="animate__animated">
+            <div class="sidepen">
+                <div class="side-wrapper">
+                    <div class="close"></div>
+                    <div class="minimize" aria-disabled="true"></div>
+                    <div class="maximize"></div>
+                </div>
+                <div class="side-bar">
+                    <ul>Favourites
+                        <li>AirDrop</li>
+                        <li>Recents</li>
+                        <li>Applications</li>
+                        <li>Desktop</li>
+                        <li>Documents</li>
+                        <li>Downloads</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="main-screen">
+                <div class="upper-bar"></div>
+            </div>
+
+        </div>
+        <div id="facetime" class="animate__animated">
+            <div class="up-frame">
                 <div class="close"></div>
                 <div class="minimize"></div>
                 <div class="maximize"></div>
             </div>
-            <div class="up-tab">
-                <ul>
-                    <table>
-                        <td>OverView</td>
-                        <td>Display</td>
-                        <td>Storage</td>
-                        <td>Memory</td>
-                        <td>Support</td>
-                        <td>Service</td>
-                    </table>
-                </ul>
+            <video id="video" autoplay></video>
+            <canvas id="canvas" width="100%" height="100%"></canvas>
+            <div class="ctrl-pen">
+                <div class="btn" id="video-ctrl"><img src="Icons/cam.png" id="v-off" alt="controls"></div>
+                <div class="btn" id="cancel"><img src="Icons/cancel.png" id="v-off" alt="controls"></div>
+                <div class="btn"><img src="Icons/mute.png" alt="controls"></div>
             </div>
         </div>
-        <div class="main-content">
-            <img src="Icons/big-sur.png">
-            macOS Big Sur<br />version 11.4 beta(20A876L)
-            <br /><br />
-            <span>MacBook Air<br />Processor 1.89GHz<br />Memory 12GB DRAM<br />Graphics Display 3 MB<br />Serial No
-                586478OPIUT</span>
-        </div>
-    </div>
-    <div id="finder-app" class="animate__animated ui-widget-content">
-        <div id="upframe">
-            <div id="close"></div>
-            <div id="minimize"></div>
-            <div id="maximize"></div>
-            <div class="app_finder">Terminal</div>
-        </div>
-        <p id="cmd-in">Vivek@Terminal~$<span id="cursor"></span>
-            <input type="text" onsubmit="showResult()" />
-        </p>
-    </div>
-    <!-- This Finder-App Wrongly named as terminal-app -->
-    <div id="terminal" class="animate__animated">
-        <div class="sidepen">
-            <div class="side-wrapper">
-                <div class="close"></div>
-                <div class="minimize" aria-disabled="true"></div>
-                <div class="maximize"></div>
-            </div>
-            <div class="side-bar">
-                <ul>Favourites
-                    <li>AirDrop</li>
-                    <li>Recents</li>
-                    <li>Applications</li>
-                    <li>Desktop</li>
-                    <li>Documents</li>
-                    <li>Downloads</li>
-                </ul>
+        <!-- All Application Ends here  -->
 
-            </div>
-        </div>
-        <div class="main-screen">
-            <div class="upper-bar"></div>
-        </div>
 
-    </div>
-    <div id="facetime" class="animate__animated">
-        <div class="up-frame">
-            <div class="close"></div>
-            <div class="minimize"></div>
-            <div class="maximize"></div>
+
+
+        <!-- /*-----------Launch-Pad Starts from here*/ -->
+        <div id="launch-pad">
+            <div class="App_Card"><img src="Icons/finder_l.png" alt="launchei-app icons in grid">Finder
+            </div>
+            <div class="App_Card"><img src="Icons/cont_l.png" alt="launchei-app icons in grid">Contacts</div>
+            <div class="App_Card"><img src="Icons/maps.png" alt="launchei-app icons in grid">Maps</div>
+            <div class="App_Card"><img src="Icons/mail.png" alt="launchei-app icons in grid">Mail</div>
+            <div class="App_Card"><img src="Icons/facetime.png" alt="launchei-app icons in grid">Face Time</div>
+            <div class="App_Card"><img src="Icons/messages.png" alt="launchei-app icons in grid">Messages</div>
+            <div class="App_Card"><img src="Icons/books.png" alt="launchei-app icons in grid">Books</div>
+            <div class="App_Card"><img src="Icons/news.png " alt="launchei-app icons in grid">News</div>
+            <div class="App_Card"><img src="Icons/safari.png" alt="launchei-app icons in grid">Safari</div>
+            <div class="App_Card"><img src="Icons/pht_l.png" alt="launchei-app icons in grid">Photos</div>
+            <div class="App_Card"><img src="Icons/set.png" alt="launchei-app icons in grid">Settings</div>
+            <div class="App_Card"><img src="Icons/notes_l.png" alt="launchei-app icons in grid">iNotes</div>
+            <div class="App_Card"><img src="Icons/tv_l.png" alt="launchei-app icons in grid">Apple TV</div>
+            <div class="App_Card"><img src="Icons/Trash_l.png" alt="launchei-app icons in grid">Trash</div>
+            <div class="App_Card"><img src="Icons/music.png" alt="launchei-app icons in grid">Apple Music</div>
+            <div class="App_Card"><img src="Icons/app_store.svg" alt="launchei-app icons in grid">App Store</div>
+            <div class="App_Card"><img src="Icons/keynote.png" alt="launchei-app icons in grid">Key Notes</div>
+            <div class="App_Card"><img src="Icons/siri.png" alt="launchei-app icons in grid">Siri</div>
+            <div class="App_Card"><img src="Icons/onenote.png" alt="launchei-app icons in grid">Onenote</div>
+            <div class="App_Card"><img src="Icons/terminal.png" alt="launchei-app icons in grid">Terminal</div>
+            <div class="App_Card"><img src="Icons/stocks.png" alt="launchei-app icons in grid">Stocks</div>
+            <div class="App_Card"><img src="Icons/calc.png" alt="launchei-app icons in grid">Calculator</div>
+            <div class="App_Card"><img src="Icons/find.png" alt="launchei-app icons in grid">Find My</div>
+            <div class="App_Card"><img src="Icons/dict.png" alt="launchei-app icons in grid">Dicitonary</div>
         </div>
-        <video id="video" autoplay></video>
-        <canvas id="canvas" width="100%" height="100%"></canvas>
-        <div class="ctrl-pen">
-            <div class="btn" id="video-ctrl"><img src="Icons/cam.png" id="v-off" alt="controls"></div>
-            <div class="btn" id="cancel"><img src="Icons/cancel.png" id="v-off" alt="controls"></div>
-            <div class="btn"><img src="Icons/mute.png" alt="controls"></div>
-        </div>
-    </div>
-    <!-- All Application Ends here  -->
-    <!-- /*-----------Launch-Pad Starts from here*/ -->
-    <div id="launch-pad">
-        <div class="App_Card"><img src="Icons/finder_l.png" alt="launchei-app icons in grid">Finder
-        </div>
-        <div class="App_Card"><img src="Icons/cont_l.png" alt="launchei-app icons in grid">Contacts</div>
-        <div class="App_Card"><img src="Icons/maps.png" alt="launchei-app icons in grid">Maps</div>
-        <div class="App_Card"><img src="Icons/mail.png" alt="launchei-app icons in grid">Mail</div>
-        <div class="App_Card"><img src="Icons/facetime.png" alt="launchei-app icons in grid">Face Time</div>
-        <div class="App_Card"><img src="Icons/messages.png" alt="launchei-app icons in grid">Messages</div>
-        <div class="App_Card"><img src="Icons/books.png" alt="launchei-app icons in grid">Books</div>
-        <div class="App_Card"><img src="Icons/news.png " alt="launchei-app icons in grid">News</div>
-        <div class="App_Card"><img src="Icons/safari.png" alt="launchei-app icons in grid">Safari</div>
-        <div class="App_Card"><img src="Icons/pht_l.png" alt="launchei-app icons in grid">Photos</div>
-        <div class="App_Card"><img src="Icons/set.png" alt="launchei-app icons in grid">Settings</div>
-        <div class="App_Card"><img src="Icons/notes_l.png" alt="launchei-app icons in grid">iNotes</div>
-        <div class="App_Card"><img src="Icons/tv_l.png" alt="launchei-app icons in grid">Apple TV</div>
-        <div class="App_Card"><img src="Icons/Trash_l.png" alt="launchei-app icons in grid">Trash</div>
-        <div class="App_Card"><img src="Icons/music.png" alt="launchei-app icons in grid">Apple Music</div>
-        <div class="App_Card"><img src="Icons/app_store.svg" alt="launchei-app icons in grid">App Store</div>
-        <div class="App_Card"><img src="Icons/keynote.png" alt="launchei-app icons in grid">Key Notes</div>
-        <div class="App_Card"><img src="Icons/siri.png" alt="launchei-app icons in grid">Siri</div>
-        <div class="App_Card"><img src="Icons/onenote.png" alt="launchei-app icons in grid">Onenote</div>
-        <div class="App_Card"><img src="Icons/terminal.png" alt="launchei-app icons in grid">Terminal</div>
-        <div class="App_Card"><img src="Icons/stocks.png" alt="launchei-app icons in grid">Stocks</div>
-        <div class="App_Card"><img src="Icons/calc.png" alt="launchei-app icons in grid">Calculator</div>
-        <div class="App_Card"><img src="Icons/find.png" alt="launchei-app icons in grid">Find My</div>
-        <div class="App_Card"><img src="Icons/dict.png" alt="launchei-app icons in grid">Dicitonary</div>
-    </div>
-    <!-- /*-----------Launch-Pad End here*/
+        <!-- /*-----------Launch-Pad End here*/
 
     /*----------------Docker Start from here-----------------------*/ -->
-    <div id="dock-container">
-        <div id="dock">
-            <ul>
-                <li id="terminal-app">
-                    <span>Finder</span>
-                    <img src="Icons/finder_l.png" />
-                </li>
-                <li id="launch">
-                    <span>Launch-pad</span>
-                    <img src="launch.png" />
-                </li>
-                <li id="finder">
-                    <span>Terminal</span>
-                    <img src="Icons/terminal.png" />
-                </li>
-                <li>
-                <li id="launch">
-                    <span>Mail</span>
-                    <img src="Icons/mail.png" />
-                </li>
-                <li id="launch">
-                    <span>Face Time</span>
-                    <img id="facetime-app" src="Icons/facetime.png" />
-                </li>
-                <li id="launch">
-                    <span>Maps</span>
-                    <img src="Icons/maps.png" />
-                </li>
-                <li>
-                    <span>Safari</span>
-                    <a href="#"><img src="Icons/safari.png" /></a>
-                </li>
-                <li>
-                    <span>Contacts</span>
-                    <a href="#"><img src="Icons/cont.png" /></a>
-                </li>
-                <li>
-                    <span>Calender</span>
-                    <a href="#"><img src="Icons/cal.png" /></a>
-                </li>
-                <li>
-                    <span>iMessages</span>
-                    <a href="#"><img src="Icons/messages.png" /></a>
-                </li>
-                <li>
-                    <span>Notes</span>
-                    <a href="#"><img src="Icons/notes.png" /></a>
-                </li>
-                <li>
-                    <span>Photos</span>
-                    <a href="#"><img src="Icons/photos.png" /></a>
-                </li>
-                <li>
-                    <span>Apple TV</span>
-                    <a href="#"><img src="Icons/tv.png" /></a>
-                </li>
-                <li>
-                    <span>Music</span>
-                    <a href="#"><img src="Icons/music.png" /></a>
-                </li>
-                <li>
-                    <span>Podcats</span>
-                    <a href="#"><img src="Icons/pod.png" /></a>
-                </li>
-                <li>
-                    <span>Keynotes</span>
-                    <a href="#"><img src="Icons/keynote.png" /></a>
-                </li>
-                <li>
-                    <span>Numbers</span>
-                    <a href="#"><img src="Icons/numbers.png" /></a>
-                </li>
-                <li>
-                    <span>Pages</span>
-                    <a href="#"><img src="Icons/pages.png" /></a>
-                </li>
-                <li>
-                    <span>App Store</span>
-                    <a href="#"><img src="Icons/app_store.svg" /></a>
-                </li>
-                <li>
-                    <span>Preferences</span>
-                    <a href="#"><img src="Icons/set.png" /></a>
-                </li>
-                <li>
-                    <span>Trash</span>
-                    <a href="#"><img src="Icons/trash.png" /></a>
-                </li>
-            </ul>
+        <div id="dock-container">
+            <div id="dock">
+                <ul>
+                    <li id="terminal-app">
+                        <span>Finder</span>
+                        <img src="Icons/finder_l.png" />
+                    </li>
+                    <li id="launch">
+                        <span>Launch-pad</span>
+                        <img src="launch.png" />
+                    </li>
+                    <li id="finder">
+                        <span>Terminal</span>
+                        <img src="Icons/terminal.png" />
+                    </li>
+                    <li>
+                    <li id="launch">
+                        <span>Mail</span>
+                        <img src="Icons/mail.png" />
+                    </li>
+                    <li id="launch">
+                        <span>Face Time</span>
+                        <img id="facetime-app" src="Icons/facetime.png" />
+                    </li>
+                    <li id="launch">
+                        <span>Maps</span>
+                        <img src="Icons/maps.png" />
+                    </li>
+                    <li>
+                        <span>Safari</span>
+                        <a href="#"><img src="Icons/safari.png" /></a>
+                    </li>
+                    <li>
+                        <span>Contacts</span>
+                        <a href="#"><img src="Icons/cont.png" /></a>
+                    </li>
+                    <li>
+                        <span>Calender</span>
+                        <a href="#"><img src="Icons/cal.png" /></a>
+                    </li>
+                    <li>
+                        <span>iMessages</span>
+                        <a href="#"><img src="Icons/messages.png" /></a>
+                    </li>
+                    <li>
+                        <span>Notes</span>
+                        <a href="#"><img src="Icons/notes.png" /></a>
+                    </li>
+                    <li>
+                        <span>Photos</span>
+                        <a href="#"><img src="Icons/photos.png" /></a>
+                    </li>
+                    <li>
+                        <span>Apple TV</span>
+                        <a href="#"><img src="Icons/tv.png" /></a>
+                    </li>
+                    <li>
+                        <span>Music</span>
+                        <a href="#"><img src="Icons/music.png" /></a>
+                    </li>
+                    <li>
+                        <span>Podcats</span>
+                        <a href="#"><img src="Icons/pod.png" /></a>
+                    </li>
+                    <li>
+                        <span>Keynotes</span>
+                        <a href="#"><img src="Icons/keynote.png" /></a>
+                    </li>
+                    <li>
+                        <span>Numbers</span>
+                        <a href="#"><img src="Icons/numbers.png" /></a>
+                    </li>
+                    <li>
+                        <span>Pages</span>
+                        <a href="#"><img src="Icons/pages.png" /></a>
+                    </li>
+                    <li>
+                        <span>App Store</span>
+                        <a href="#"><img src="Icons/app_store.svg" /></a>
+                    </li>
+                    <li>
+                        <span>Preferences</span>
+                        <a href="#"><img src="Icons/set.png" /></a>
+                    </li>
+                    <li>
+                        <span>Trash</span>
+                        <a href="#"><img src="Icons/trash.png" /></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!-- /*----------------Docker Ends here----------------------------*/ -->
-    <div id="widget-btn"></div>
-    <section id="widgets_bar">
-
+        <!-- /*----------------Docker Ends here----------------------------*/ -->
+        <div id="widget-btn"></div>
+        <section id="widgets_bar">
+            <div class="stock_card">
+                <div class="card_info">AAPL<br>Apple Inc </div>
+                <div class="line"></div>
+                <div class="card_info">MSFT<br>MicroSoft Inc </div>
+                <div class="line"></div>
+                <div class="card_info">TSLA<br>Tesla Inc </div>
+                <div class="line"></div>
+                <div class="card_info">TSLA<br>Tesla Inc </div>
+            </div>
+        </section>
     </section>
 </body>
 <!-- /*----Javascript At End Of Body Tag---This Script Contains All Functions Which Controls This macOS Web Clone😊*/ -->
