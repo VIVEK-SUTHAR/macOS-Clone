@@ -24,6 +24,7 @@
 
 <body>
     <section id="macOS">
+        <!-- Main Back-ground And uppen Navbar code starts from here  -->
         <div class="main">
             <div id="back">
                 <img id="primarybg" src="back.jpg" alt="Background image"></img>
@@ -53,6 +54,9 @@
                 </nav>
             </header>
         </div>
+        <!-- Code for Nav bar and background ends here  -->
+
+        <!-- Log-In Screen Starts from here  -->
         <section id="log_in">
             <div id="time"></div>
             <div id="user"><img src="Icons/user-svgrepo-com.svg" alt="userimage">
@@ -71,17 +75,28 @@
                 <span class="btn" class="slp"><img src="Icons/shutdown.svg" alt="shutdown button"> ShutDown</span>
             </div>
         </section>
+
+        <!-- Log-In Screen ends here  -->
+
+        <!-- Buttons for finder-drop-down and search_bar startsb from here  -->
         <button id="finder-dropdown-btn">
             <span id="ter_til">Terminal</span>
         </button>
         <button id="search_bar" name="search">
         </button>
+        <!-- Buttons for finder-dropdown and search_bar ends here  -->
+
+        <!-- Search_Form Starts from here  -->
         <div id="search_form" class="animate__animated">
             <form>
                 <label for="input">Search</label><br />
                 <input type="text" autofocus="on" value="" />
             </form>
         </div>
+        <!-- Saerxh From Ends Here  -->
+
+        <!-- Upper Menubatrs's Drop-Down-list's code  Starts from here  -->
+        <!-- Apple Logo menu top-right start from here  -->
         <div id="apple_menu">
             <ul>
                 <li id="about_mac_btn">About This Mac</li>
@@ -96,6 +111,8 @@
                 <li>Log Out..</li>
             </ul>
         </div>
+        <!-- Apple logo top left ends here  -->
+        <!-- Finder-menu start fropm here  -->
         <div id="finder-dropdown">
             <ul>
                 <li>About Finder</li>
@@ -105,6 +122,8 @@
                 <li>About Mac</li>
             </ul>
         </div>
+        <!-- Finder menu ends here  -->
+        <!-- File Menu starts from here  -->
         <div id="file_menu">
             <ul>
                 <li>New Finder Window</li>
@@ -126,6 +145,8 @@
                 <li>FInd</li>
             </ul>
         </div>
+        <!-- File Menu ends here  -->
+        <!-- Code For Control Panel  sarts from here  -->
         <button id="controls-tab-btn" name="controls"></button>
         <div id="control-tab">
             <div id="dnd"><span><img src="Icons/dnd.png">Do Not<br>Disturb</div></span>
@@ -141,8 +162,9 @@
             <div class="display"><span id="sv">Sound:10%</span><br><input id="srange" type="range" max="100" min="0"
                     value="10"></div>
         </div>
+        <!-- Code of control panel ends here  -->
         <!--All the application code-->
-        <!-- This Is terminal app ,Wrongly named as finder-app -->
+        <!-- About mac Window starts from here  -->
         <div id="about_mac" class="animate__animated">
             <div class="up_frame">
                 <div class="up-wrapper">
@@ -171,6 +193,7 @@
                     586478OPIUT</span>
             </div>
         </div>
+        <!-- This Is terminal app ,Wrongly named as finder-app -->
         <div id="finder-app" class="animate__animated ui-widget-content">
             <div id="upframe">
                 <div id="close"></div>
@@ -222,9 +245,6 @@
             </div>
         </div>
         <!-- All Application Ends here  -->
-
-
-
 
         <!-- /*-----------Launch-Pad Starts from here*/ -->
         <div id="launch-pad">
@@ -349,6 +369,8 @@
             </div>
         </div>
         <!-- /*----------------Docker Ends here----------------------------*/ -->
+
+        <!-- Widgets Panel Starts From Here  -->
         <div id="widget-btn"></div>
         <section id="widgets_bar">
             <div class="stock_card">
@@ -362,6 +384,7 @@
             </div>
         </section>
     </section>
+    <!-- Widgets Panel ends here  -->
 </body>
 <!-- /*----Javascript At End Of Body Tag---This Script Contains All Functions Which Controls This macOS Web Clone😊*/ -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
