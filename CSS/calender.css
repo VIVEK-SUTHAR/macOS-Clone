@@ -1,0 +1,42 @@
+#calender {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background-color: #242423;
+    top: 25%;
+    left: 25%;
+    border-radius: 8px;
+    display: none;
+}
+
+#calender .up-frame {
+    position: absolute;
+    width: 10%;
+    height: 6%;
+    background-color: #242423;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top-left-radius: inherit;
+}
+
+#calender .up-frame .close {
+    background-color: #ff5e52;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+#calender .up-frame .minimize {
+    background-color: #ffbc2a;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+#calender .up-frame .maximize {
+    background-color: #24ca3f;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
