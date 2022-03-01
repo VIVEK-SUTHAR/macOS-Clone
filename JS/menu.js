@@ -35,13 +35,11 @@ $('#enter').click(function () {
     $('#dock-container').css("bottom", "0")
 })
 //finder dropdown when clicked on finder dropdown will be displayed44
-
 $('#finder-dropdown-btn').click(function () {
     $('#apple_menu').fadeOut(100);
     $('#finder-dropdown').slideToggle(400);
     $('#control-tab').fadeOut(100);
     $('#file_menu').slideUp(200);
-
 });
 //when clicked on desktop image finder dropdown will be hidden
 $('.main img').click(function () {
