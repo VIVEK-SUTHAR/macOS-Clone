@@ -1,13 +1,15 @@
 #finder-app {
     display: none;
     position: absolute;
-    background-color: #181818;
+    background-color: #242423;
     left: 350px;
     top: 100px;
     width: 850px;
     height: 450px;
     padding: 0px;
     border-radius: 8px;
+    border: 1px solid rgb(161, 161, 161);
+    /* box-shadow:1px 10px 10px 5px #242422; */
 }
 
 #finder-app #upframe {
@@ -16,7 +18,7 @@
     height: 25px;
     top: 0px;
     left: 0;
-    background-color: #181818;
+    background-color: #242423;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 }
@@ -27,7 +29,7 @@
     height: 11px;
     left: 10px;
     top: 8px;
-    background-color: red;
+    background-color: #ff5e52;
     border-radius: 50%;
 }
 
@@ -37,7 +39,7 @@
     height: 11px;
     left: 30px;
     top: 8px;
-    background-color: yellow;
+    background-color: #ffbc2a;
     border-radius: 50%;
 }
 
@@ -47,7 +49,7 @@
     height: 11px;
     left: 50px;
     top: 8px;
-    background-color: rgb(70, 223, 70);
+    background-color: #24ca3f;
     border-radius: 50%;
 }
 
@@ -79,7 +81,7 @@
     margin-left: 5px;
 }
 
-#finder-app   #cmd-in {
+#finder-app #cmd-in {
     position: relative;
     margin-top: 40px;
     margin-left: 4px;
@@ -96,13 +98,14 @@
     font-family: monospace
 }
 
-#finder-app #cmd-in input:focus  {
+#finder-app #cmd-in input:focus {
     background-color: transparent;
     border: black;
     box-shadow: #121212;
     text-decoration: none;
     outline: none;
 }
+
 @keyframes cursor {
     0% {
         opacity: 0;

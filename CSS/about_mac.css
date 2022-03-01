@@ -1,0 +1,110 @@
+#about_mac {
+    position: absolute;
+    height: 45%;
+    width: 40%;
+    background-color: #282828;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    display: none;
+}
+
+#about_mac .up_frame {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-color: #1b1b1b;
+}
+
+#about_mac .up_frame .up-wrapper {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#about_mac .up_frame .close {
+    background-color: #ff5e52;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+}
+
+#about_mac .up_frame .minimize {
+    background-color: #ffbc2a;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+}
+
+#about_mac .up_frame .maximize {
+    background-color: #444344;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+}
+
+#about_mac .up_frame .up-tab {
+    position: absolute;
+    width: max-content;
+    height: 70%;
+    margin-left: 20%;
+    top: 0;
+    margin-top: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    display: flex;
+    align-items: center;
+}
+
+#about_mac .up_frame .up-tab ul table {
+    color: azure;
+    font-size: 15px;
+}
+
+#about_mac .up_frame .up-tab ul table td {
+    padding: 0.2px 4px;
+    border-left: 1px solid grey;
+    text-align: center;
+
+}
+
+#about_mac .up_frame .up-tab ul table td:first-child {
+    background-color: #444344;
+    padding: none;
+    border-left: none;
+}
+
+#about_mac .main-content {
+    top: 0;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:space-around;
+    margin-left: -15%;
+    font-size: 22px;
+    color: white;
+}
+
+#about_mac .main-content img {
+    top: 0;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 25%;
+    height: 25%;
+}
+#about_mac .main-content span{
+    position: absolute;
+    top: 0;
+    margin-top: 25%;
+    margin-left: 35%;
+    font-size: 16px;
+    color: white;
+}
