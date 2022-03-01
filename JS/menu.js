@@ -27,7 +27,7 @@ setTimeout(function () {
     document.getElementById('day').innerHTML = dayName + " " + monthName + " " + date + "  " + time;
     document.querySelector(".calender .day").innerHTML = dayName;
     document.querySelector(".calender .date").innerHTML = date;
-    
+
 }, 100);
 $('#enter').click(function () {
     $('#log_in').fadeOut(500);
@@ -272,15 +272,15 @@ setInterval(() => {
 }, 1000)
 
 document.getElementById("widget-btn").addEventListener("mouseover", mouseOver);
-function mouseOver(){
-    var widget_pen=document.getElementById("widgets_bar");
-    widget_pen.style.right="0";
+function mouseOver() {
+    var widget_pen = document.getElementById("widgets_bar");
+    widget_pen.style.right = "0";
 }
 document.getElementById("widgets_bar").addEventListener("mouseout", mouseOut);
 
-function mouseOut(){
-    var widget_pen=document.getElementById("widgets_bar");
-    widget_pen.style.right="-100%";
+function mouseOut() {
+    var widget_pen = document.getElementById("widgets_bar");
+    widget_pen.style.right = "-100%";
 }
 
 // Code for opening and closing Calender App
@@ -296,3 +296,26 @@ $('#calender .up-frame .close').click(function () {
     $('#calender').addClass("animate__zoomOut");
     OPEN_APP_COUNTER--;
 })
+
+
+
+
+
+
+
+
+setInterval(() => {
+    d = new Date(); //object of date()
+    hr = d.getHours();
+    min = d.getMinutes();
+    sec = d.getSeconds();
+    hr_rotation = 30 * hr + min / 2; //converting current time
+    min_rotation = 6 * min;
+    sec_rotation = 6 * sec;
+    hour.style.transform = `rotate(${hr_rotation}deg)`;
+    minute.style.transform = `rotate(${min_rotation}deg)`;
+    second.style.transform = `rotate(${sec_rotation}deg)`;
+    hour_hand.style.transform = `rotate(${hr_rotation}deg)`;
+    minute_hand.style.transform = `rotate(${min_rotation}deg)`;
+    second_hand.style.transform = `rotate(${sec_rotation}deg)`;
+}, 1000);
