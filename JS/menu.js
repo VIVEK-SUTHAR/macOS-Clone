@@ -318,4 +318,4 @@ setInterval(() => {
     hour_hand.style.transform = `rotate(${hr_rotation}deg)`;
     minute_hand.style.transform = `rotate(${min_rotation}deg)`;
     second_hand.style.transform = `rotate(${sec_rotation}deg)`;
-}, 1000);
+}, 10);
