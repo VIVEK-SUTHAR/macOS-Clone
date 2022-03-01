@@ -25,7 +25,9 @@ setTimeout(function () {
     var monthName = month[dayn.getMonth()];
     var date = dayn.getDate();
     document.getElementById('day').innerHTML = dayName + " " + monthName + " " + date + "  " + time;
-
+    document.querySelector(".calender .day").innerHTML = dayName;
+    document.querySelector(".calender .date").innerHTML = date;
+    
 }, 100);
 $('#enter').click(function () {
     $('#log_in').fadeOut(500);
@@ -281,3 +283,17 @@ function mouseOut(){
     var widget_pen=document.getElementById("widgets_bar");
     widget_pen.style.right="-100%";
 }
+
+// Code for opening and closing Calender App
+$('#calender-app').click(function () {
+    OPEN_APP_COUNTER++;
+    $('#calender').removeClass("animate__zoomOut");
+    $('#calender').addClass("animate__zoomIn");
+    $('#calender').css("display", "block");
+
+})
+
+$('#calender .up-frame .close').click(function () {
+    $('#calender').addClass("animate__zoomOut");
+    OPEN_APP_COUNTER--;
+})
