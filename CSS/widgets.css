@@ -129,7 +129,7 @@
 }
 
 .clock_card {
-    height: 100%;
+    height: 25%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.849);
     border-radius: 20px;
@@ -144,8 +144,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
-    padding-bottom: 26px;
+    /* border: 1px solid red; */
+    padding: 10px 0;
 }
 .clockContainer {
     position: relative;
