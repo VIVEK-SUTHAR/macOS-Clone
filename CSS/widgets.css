@@ -62,11 +62,12 @@
     position: relative;
     border-radius: 20px;
     padding: 20px;
+    /* margin-top: 35px;
+    margin-bottom: 20px; */
 }
 
 .calender p.day {
     color: red;
-
 }
 
 .calender p.date {
@@ -124,19 +125,23 @@
 }
 
 .clock_card {
-    height: 30%;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.849);
     border-radius: 20px;
     color: aliceblue;
     font-size: 1.2vw;
-    margin-right: 10%;
+    margin-top: 2px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 26px;
 }
 
 /* clock  */
@@ -226,4 +231,20 @@
     left: 49.25%;
     opacity: 0.8;
     background-color: red;
+}
+
+#clockLocationfirst {
+    color: white;
+    margin-top: 100%;
+    padding-top: 5px;
+    padding-left: 25px;
+    letter-spacing: normal;
+}
+
+#clockLocationsecond {
+    color: white;
+    margin-top: 100%;
+    padding-top: 5px;
+    padding-left: 25px;
+    letter-spacing: normal;
 }
