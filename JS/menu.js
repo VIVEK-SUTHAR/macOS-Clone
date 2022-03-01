@@ -135,6 +135,7 @@ $(function () {
     $("#terminal").draggable();
     $("#about_mac").draggable();
     $("#facetime").draggable();
+    $("#calender").draggable();
 });
 function showFinder() {
     OPEN_APP_COUNTER++;
@@ -268,7 +269,7 @@ $('#video-ctrl').click(function () {
 setInterval(() => {
     console.log(OPEN_APP_COUNTER);
 
-}, 100)
+}, 1000)
 
 document.getElementById("widget-btn").addEventListener("mouseover", mouseOver);
 function mouseOver(){
