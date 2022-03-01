@@ -61,7 +61,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 102%;
     margin-left: -10%;
 }
