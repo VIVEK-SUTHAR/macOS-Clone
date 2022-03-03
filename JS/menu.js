@@ -34,6 +34,13 @@ $('#enter').click(function () {
     $('#dock-container').css("display", "block")
     $('#dock-container').css("bottom", "0")
 })
+$('#sleep_screen').click(function(){
+    $('#apple_menu').slideUp(200);
+
+    $('#log_in').fadeIn(500);
+    $('#dock-container').css("display", "none")
+    $('#dock-container').css("bottom", "-100%")
+})
 //finder dropdown when clicked on finder dropdown will be displayed44
 $('#finder-dropdown-btn').click(function () {
     $('#apple_menu').fadeOut(100);
