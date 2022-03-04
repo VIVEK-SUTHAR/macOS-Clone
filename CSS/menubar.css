@@ -398,3 +398,41 @@ input[type="range"]::selection {
     width:inherit;
     border-radius: 5px;
 }
+#view_menu{
+    display: none;
+    position: relative;
+    width:205px;
+    height:max-content;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 150px;
+    top: 22px;
+    border: 0.01px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    z-index: 999999999999999999999999;
+    overflow: hidden;
+}
+#view_menu ul {
+    list-style: none;
+}
+#view_menu ul li {
+    transition: all 0.2s ease;
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 0 5px;
+}
+#view_menu ul li:nth-child(4){
+    border-bottom: 0.5px solid #333;
+}
+#view_menu ul  li:hover {
+    background-color: rgb(0, 89, 255);
+    width:inherit;
+    border-radius: 5px;
+    transform: scale(1.1);
+}

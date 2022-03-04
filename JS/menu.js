@@ -34,7 +34,7 @@ $('#enter').click(function () {
     $('#dock-container').css("display", "block")
     $('#dock-container').css("bottom", "0")
 })
-$('#sleep_screen').click(function(){
+$('#sleep_screen').click(function () {
     $('#apple_menu').slideUp(200);
 
     $('#log_in').fadeIn(500);
@@ -57,6 +57,8 @@ $('.main img').click(function () {
     $('#apple_menu').slideUp(200);
     $('#file_menu').slideUp(100);
     $('#edit_menu').slideUp(100);
+    $('#view_menu').slideUp(100);
+
 });
 
 $('#controls-tab-btn').click(function () {
@@ -204,6 +206,8 @@ $('.ct_btn').click(function () {
 $('#logo').click(function () {
     $('#file_menu').slideUp(200);
     $('#apple_menu').slideToggle(400);
+    $('#view_menu').fadeOut(100);
+
 })
 
 
@@ -215,6 +219,8 @@ $('#file_menu_btn').click(function () {
     $('#finder-dropdown').fadeOut(50);
     $('#apple_menu').fadeOut(50);
     $('#edit_menu').fadeOut(100);
+    $('#view_menu').fadeOut(100);
+
 
 })
 // Code for opening and closing edit menu 
@@ -224,6 +230,19 @@ $('#edit_menu_btn').click(function () {
     $('#file_menu').fadeOut(100);
     $('#finder-dropdown').fadeOut(50);
     $('#apple_menu').fadeOut(50);
+    $('#view_menu').fadeOut(100);
+
+
+})
+$('#view_menu_btn').click(function () {
+
+    $('#view_menu').slideToggle(100);
+    $('#file_menu').fadeOut(100);
+    $('#finder-dropdown').fadeOut(50);
+    $('#apple_menu').fadeOut(50);
+    $('#edit_menu').fadeOut(100);
+
+
 
 })
 //code for closing and opening Finder App
