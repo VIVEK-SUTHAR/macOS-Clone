@@ -1,10 +1,10 @@
-navigator.geolocation.getCurrentPosition((position) => {
-    console.log(position);
-    lon = position.coords.longitude;
-    lat = position.coords.latitude;
-});
+// navigator.geolocation.getCurrentPosition((position) => {
+//     console.log(position);
+//     lon = position.coords.longitude;
+//     lat = position.coords.latitude;
+// });
 fetch(
-    "https://api.openweathermap.org/data/2.5/weather?q=vadodara&units=metric&APPID=8c0293045b979c5bfd0b2a43bd032105"
+    "https://api.openweathermap.org/data/2.5/weather?q=anand&units=metric&APPID=8c0293045b979c5bfd0b2a43bd032105"
 )
     .then((response) => response.json())
     .then((data) => {

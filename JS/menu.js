@@ -34,12 +34,20 @@ $('#enter').click(function () {
     $('#dock-container').css("display", "block")
     $('#dock-container').css("bottom", "0")
 })
+$('#sleep_screen').click(function () {
+    $('#apple_menu').slideUp(200);
+
+    $('#log_in').fadeIn(500);
+    $('#dock-container').css("display", "none")
+    $('#dock-container').css("bottom", "-100%")
+})
 //finder dropdown when clicked on finder dropdown will be displayed44
 $('#finder-dropdown-btn').click(function () {
     $('#apple_menu').fadeOut(100);
     $('#finder-dropdown').slideToggle(400);
     $('#control-tab').fadeOut(100);
     $('#file_menu').slideUp(200);
+    $('#edit_menu').slideUp(200);
 });
 //when clicked on desktop image finder dropdown will be hidden
 $('.main img').click(function () {
@@ -48,10 +56,14 @@ $('.main img').click(function () {
     $('#search_form').css("display", "none");
     $('#apple_menu').slideUp(200);
     $('#file_menu').slideUp(100);
+    $('#edit_menu').slideUp(100);
+    $('#view_menu').slideUp(100);
+
 });
 
 $('#controls-tab-btn').click(function () {
     $('#finder-dropdown').fadeOut(400);
+    $('#edit_menu').fadeOut(400);
     $('#control-tab').slideToggle(200);
 
 });
@@ -194,6 +206,8 @@ $('.ct_btn').click(function () {
 $('#logo').click(function () {
     $('#file_menu').slideUp(200);
     $('#apple_menu').slideToggle(400);
+    $('#view_menu').fadeOut(100);
+
 })
 
 
@@ -204,9 +218,33 @@ $('#file_menu_btn').click(function () {
     $('#file_menu').slideToggle(100);
     $('#finder-dropdown').fadeOut(50);
     $('#apple_menu').fadeOut(50);
+    $('#edit_menu').fadeOut(100);
+    $('#view_menu').fadeOut(100);
+
+
 })
+// Code for opening and closing edit menu 
+$('#edit_menu_btn').click(function () {
+
+    $('#edit_menu').slideToggle(100);
+    $('#file_menu').fadeOut(100);
+    $('#finder-dropdown').fadeOut(50);
+    $('#apple_menu').fadeOut(50);
+    $('#view_menu').fadeOut(100);
 
 
+})
+$('#view_menu_btn').click(function () {
+
+    $('#view_menu').slideToggle(100);
+    $('#file_menu').fadeOut(100);
+    $('#finder-dropdown').fadeOut(50);
+    $('#apple_menu').fadeOut(50);
+    $('#edit_menu').fadeOut(100);
+
+
+
+})
 //code for closing and opening Finder App
 $('#terminal-app').click(function () {
     OPEN_APP_COUNTER++;
@@ -296,13 +334,6 @@ $('#calender .up-frame .close').click(function () {
     $('#calender').addClass("animate__zoomOut");
     OPEN_APP_COUNTER--;
 })
-
-
-
-
-
-
-
 
 setInterval(() => {
     d = new Date(); //object of date()
