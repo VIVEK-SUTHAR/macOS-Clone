@@ -156,7 +156,6 @@
 
             </ul>
         </div>
-
         <button id="controls-tab-btn" name="controls"></button>
         <div id="control-tab">
             <div id="dnd"><span><img src="Icons/dnd.png">Do Not<br>Disturb</div></span>
@@ -173,7 +172,6 @@
                     value="10"></div>
         </div>
         <!--All the application code-->
-        <!-- This Is terminal app ,Wrongly named as finder-app -->
         <div id="about_mac" class="animate__animated">
             <div class="up_frame">
                 <div class="up-wrapper">
@@ -202,6 +200,8 @@
                     586478OPIUT</span>
             </div>
         </div>
+        <!-- This Is terminal app ,Wrongly named as finder-app -->
+
         <div id="finder-app" class="animate__animated ui-widget-content">
             <div id="upframe">
                 <div id="close"></div>
@@ -210,8 +210,9 @@
                 <div class="app_finder">Terminal</div>
             </div>
             <p id="cmd-in">Vivek@Terminal~$<span id="cursor"></span>
-                <input type="text" onsubmit="showResult()" />
+                <input type="text" id="terminal_cmd"onsubmit="showResult()" onkeypress="showOutput()"/>
             </p>
+            <div class="output"></div>
         </div>
         <!-- This Finder-App Wrongly named as terminal-app -->
         <div id="terminal" class="animate__animated">
@@ -436,11 +437,14 @@
 </body>
 <!-- /*----Javascript At End Of Body Tag---This Script Contains All Functions Which Controls This macOS Web Clone😊*/ -->
 <script src="JS/weather.js"></script>
+
 <script src="JS/menu.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
-    integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
 <script src="https://cdn.tutorialjinni.com/jquery-resize/1.1/jquery.ba-resize.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="JS/terminal.js"></script>
 
 </html>

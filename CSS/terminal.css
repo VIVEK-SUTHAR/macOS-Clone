@@ -8,6 +8,7 @@
     left: 20%;
     border-radius: 8px;
     display: none;
+    overflow: scroll;
     /* margin-left: 15px; */
     /* display: none; */
 }
@@ -114,4 +115,11 @@
     height: 40px;
     background-color: #262a2b;
     border-top-right-radius: inherit;
+}
+
+.output {
+    margin: 5px;
+    font-size: 19px;
+    color: #ffffff;
+    overflow: hidden;
 }
