@@ -14,7 +14,7 @@ $("#terminal_cmd").on('keyup', function (event) {
             startDelay: 10,
             backSpeed: 0,
             cursorChar: '_',
-            loop: true
+            loop: false
         });
     }
 

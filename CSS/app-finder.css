@@ -9,9 +9,13 @@
     padding: 0px;
     border-radius: 8px;
     border: 1px solid rgb(161, 161, 161);
+    overflow-x: hidden;
     /* box-shadow:1px 10px 10px 5px #242422; */
 }
-
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
 #finder-app #upframe {
     position: absolute;
     width: inherit;
@@ -105,7 +109,11 @@
     text-decoration: none;
     outline: none;
 }
-
+.output{
+    margin: 5px;
+    font-size: 21px;
+    color: #ffffff;
+}
 @keyframes cursor {
     0% {
         opacity: 0;
