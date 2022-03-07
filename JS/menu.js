@@ -350,3 +350,15 @@ setInterval(() => {
     minute_hand.style.transform = `rotate(${min_rotation}deg)`;
     second_hand.style.transform = `rotate(${sec_rotation}deg)`;
 }, 10);
+
+
+
+
+
+// CODE FOR FINDER APPS INTERNAL WORKING 
+$('#f_recents').click(function(){
+    $('#finder-app-scrren').css("display","none");
+})
+$('#f_application').click(function(){
+    $('#finder-app-scrren').css("display","block");
+})
