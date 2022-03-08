@@ -50,7 +50,6 @@
     margin-left: 35%;
     color: #fff;
     font-size: 1.5rem;
-
 }
 
 .bg-dark {
@@ -83,7 +82,7 @@
     margin-top: 22px;
     display: flex;
     background-color: rgb(37, 33, 33);
-    height: 80vh;
+    height: 82vh;
 }
 
 #calender .container .calender-head {
