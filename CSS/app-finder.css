@@ -9,15 +9,30 @@
     padding: 0px;
     border-radius: 8px;
     border: 1px solid rgb(161, 161, 161);
+    overflow-x: hidden;
     /* box-shadow:1px 10px 10px 5px #242422; */
 }
-
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background: rgb(158, 148, 148);
+}
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    height: 10px;
+    background: rgb(83, 83, 83);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background:inherit;
+}
 #finder-app #upframe {
-    position: absolute;
+    position: sticky;
     width: inherit;
     height: 25px;
     top: 0px;
     left: 0;
+    z-index: 5;
     background-color: #242423;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
@@ -105,7 +120,11 @@
     text-decoration: none;
     outline: none;
 }
-
+.output{
+    margin: 5px;
+    font-size: 21px;
+    color: #ffffff;
+}
 @keyframes cursor {
     0% {
         opacity: 0;

@@ -2,23 +2,60 @@
     position: absolute;
     height: 50%;
     width: 50%;
-    background-color: #242423;
+    background-color: #242423 repeat cover;
     top: 25%;
     left: 25%;
     border-radius: 8px;
     display: none;
     border: 1px solid #fff;
+    overflow: auto;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    background: rgb(73, 72, 72);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background:transparent;
+    border-radius: 10px;
+    width: 1px;    
+}
+::-webkit-scrollbar-thumb{
+    width: 5px;
 }
 
 #calender .up-frame {
-    position: absolute;
-    width: 10%;
+    position: fixed;
+    width: 100%;
     height: 6%;
     background-color: #242423;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     border-top-left-radius: inherit;
+    text-align: center;
+    padding: 4px;
+    /* border: 1px solid red; */
+}
+
+#calender .up-frame .btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+.app_name {
+    margin-left: 35%;
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+.bg-dark {
+    background-color: #242423;
+    width: 100%;
 }
 
 #calender .up-frame .close {
@@ -40,4 +77,83 @@
     height: 12px;
     width: 12px;
     border-radius: 50%;
+}
+
+#calender .container {
+    margin-top: 22px;
+    display: flex;
+    background-color: rgb(37, 33, 33);
+    height: 80vh;
+}
+
+#calender .container .calender-head {
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#calender .container .calender-head {
+    flex: 1;
+    justify-content: space-evenly;
+    border: 1px bold red;
+}
+
+#calender .container .calender-head .month {
+    display: flex;
+    height: 50px;
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#333;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#calender .container .calender-head .days {
+    display: grid;
+}
+
+#calender .container .calender-head .days ul {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    background: #333;
+}
+
+#calender .container .calender-head .days ul li {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.date ul {
+    height: 70vh;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* background: rgb(172, 26, 26); */
+}
+
+.date ul li {
+    color: #ffffff;
+    text-align: right;
+    padding-right: 5px;
+    border: 1px solid black;
+}
+
+.date .current {
+    background: rgba(253, 253, 253, 0.479);
+    color: #ffffff;
+    font-weight: 900;
+    border-radius: 5px;
+}
+.calender-head img{
+
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
 }
