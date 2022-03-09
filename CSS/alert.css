@@ -66,7 +66,9 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        font-size: 1.1rem;    }
+        font-size: 1.1rem;
+    }
+
     #sm_user {
         margin-top: 5%;
         height: 18%;
@@ -79,13 +81,15 @@
         color: aliceblue;
         transition: all 0.25s ease-in-out;
     }
-    #sm_user img{
+
+    #sm_user img {
         width: 15px;
         height: 15px;
     }
-    #sm_user:hover{
+
+    #sm_user:hover {
         transform: scale(1.1);
         border: 3px solid rgb(43, 43, 235);
-        box-shadow: 0 0 10px 1px rgb(43, 43, 235) ;
+        box-shadow: 0 0 10px 1px rgb(43, 43, 235);
     }
 }
