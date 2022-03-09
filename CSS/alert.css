@@ -1,0 +1,91 @@
+.alert-container {
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    top: 15%;
+    left: 10%;
+    background: rgb(226, 193, 193);
+}
+
+#mobile_alert {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #macOS {
+        display: none;
+    }
+
+    #mobile_alert {
+        display: block;
+    }
+
+    body {
+        background: rgba(255, 190, 190, 0.596);
+    }
+
+    .alert-container {
+        border-radius: 25px;
+        padding: 10px;
+        /* bo */
+    }
+
+    .alert-box {
+        width: inherit;
+        height: inherit;
+        background: #000;
+        border-radius: inherit;
+    }
+
+    .alert-box .upbox {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        background: rgb(255, 154, 154);
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5rem;
+        color: rgb(0, 0, 0);
+    }
+
+    .alert-box .lowbox {
+        position: relative;
+        width: inherit;
+        height: 50%;
+        color: #000;
+        background: rgb(255, 239, 239);
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 1.1rem;    }
+    #sm_user {
+        margin-top: 5%;
+        height: 18%;
+        background: rgb(97, 108, 255);
+        border-radius: 10px;
+        width: max-content;
+        padding: 5px 15px;
+        border: none;
+        font-size: 1.2rem;
+        color: aliceblue;
+        transition: all 0.25s ease-in-out;
+    }
+    #sm_user img{
+        width: 15px;
+        height: 15px;
+    }
+    #sm_user:hover{
+        transform: scale(1.1);
+        border: 3px solid rgb(43, 43, 235);
+        box-shadow: 0 0 10px 1px rgb(43, 43, 235) ;
+    }
+}
