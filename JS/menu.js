@@ -356,9 +356,9 @@ setInterval(() => {
 
 
 // CODE FOR FINDER APPS INTERNAL WORKING 
-$('#f_recents').click(function(){
-    $('#finder-app-scrren').css("display","none");
+$('#f_recents').click(function () {
+    $('#finder-app-scrren').css("display", "none");
 })
-$('#f_application').click(function(){
-    $('#finder-app-scrren').css("display","block");
+$('#f_application').click(function () {
+    $('#finder-app-scrren').css("display", "block");
 })

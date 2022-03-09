@@ -8,6 +8,7 @@
     left: 20%;
     border-radius: 8px;
     display: none;
+    transition: all 0.6s ease-in-out;
 
     /* margin-left: 15px; */
     /* display: none; */
@@ -161,4 +162,9 @@
 .finder-screen .finder-application .app-card img {
     width: 80%;
     height: 80%;
+}
+.terminal_maximized{
+    position: absolute;
+    background: rgb(255, 0, 0);
+    width: 100%;
 }
