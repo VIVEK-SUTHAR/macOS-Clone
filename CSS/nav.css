@@ -9,7 +9,9 @@
 body {
   overflow: hidden;
 }
-
+#macOS{
+  display: block;
+}
 #back {
   width: 110%;
   height: 105%;
