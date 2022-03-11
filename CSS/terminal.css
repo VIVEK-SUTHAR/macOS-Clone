@@ -137,6 +137,7 @@
 
 .finder-screen .finder-application {
     /* background: rgb(146, 49, 49); */
+  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5%;
@@ -163,7 +164,8 @@
     width: 80%;
     height: 80%;
 }
-.terminal_maximized{
+
+.terminal_maximized {
     position: absolute;
     background: rgb(255, 0, 0);
     width: 100%;

@@ -148,6 +148,8 @@ $(function () {
     $("#about_mac").draggable();
     $("#facetime").draggable();
     $("#calender").draggable();
+    $("#app-store-app").draggable();
+
 });
 function showFinder() {
     OPEN_APP_COUNTER++;
