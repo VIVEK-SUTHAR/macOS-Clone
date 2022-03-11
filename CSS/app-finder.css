@@ -1,7 +1,9 @@
 #finder-app {
     display: none;
     position: absolute;
-    background-color: #242423;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
     left: 350px;
     top: 100px;
     width: 850px;
@@ -10,22 +12,30 @@
     border-radius: 8px;
     border: 1px solid rgb(161, 161, 161);
     overflow-x: hidden;
+    font-weight: 500;
     /* box-shadow:1px 10px 10px 5px #242422; */
 }
-::-webkit-scrollbar{
-    width: 10px;
+
+::-webkit-scrollbar {
+    width: 5px;
     height: 10px;
-    background: rgb(158, 148, 148);
+    background: rgba(255, 255, 255, 0.20);
+
 }
-::-webkit-scrollbar-thumb{
-    width: 8px;
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
     height: 10px;
-    background: rgb(83, 83, 83);
+    background: rgba(255, 255, 255, 0.20);
+
     border-radius: 10px;
 }
-::-webkit-scrollbar-track{
-    background:inherit;
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.20);
+
 }
+
 #finder-app #upframe {
     position: sticky;
     width: inherit;
@@ -85,6 +95,7 @@
     color: aliceblue;
     font-size: 20px;
     margin-left: 44%;
+    
 }
 
 #finder-app #cmd {
@@ -100,17 +111,20 @@
     position: relative;
     margin-top: 40px;
     margin-left: 4px;
-    color: greenyellow;
+    color: rgb(0, 0, 0);
     font-size: 18px;
+
 }
 
 #finder-app #cmd-in input {
     background-color: transparent;
     border: none;
-    color: greenyellow;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     margin-left: 5px;
-    font-family: monospace
+    font-family: monospace;
+
+
 }
 
 #finder-app #cmd-in input:focus {
@@ -120,11 +134,14 @@
     text-decoration: none;
     outline: none;
 }
-.output{
+
+.output {
     margin: 5px;
     font-size: 21px;
-    color: #ffffff;
+    color: #000000;
+
 }
+
 @keyframes cursor {
     0% {
         opacity: 0;
