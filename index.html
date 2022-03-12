@@ -9,6 +9,7 @@
     <title>macOS Clone|Big Sur Clone By Vivek Suthar|</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="STYLESHEET" href="CSS/login.css">
     <link rel="STYLESHEET" href="CSS/menubar.css">
     <link rel="STYLESHEET" href="CSS/app-finder.css">
@@ -360,10 +361,11 @@
             <nav id="nav-app">
                 <ul class="nav-app-list">
                     <li class="search-bar">
-                        <i class="material-icons" style="color: #cccdcf">search</i>
-                        <input type="text" class="search-bar-color" placeholder="Search">
+                        <!-- <i class="material-icons" style="color: #cccdcf">search</i> -->
+                        <span class="input-icon"><span class="fa fa-search"></span></span>
+                        <input type="text" class="search-bar-color material-icons" placeholder="Search">
                     </li>
-                    <li class="discover-nav">
+                    <li class=" active-tab discover-nav ">
                         <i class="material-icons" style="color: #cccdcf">star</i>
                         <a href="#" id="#discover">Discover</a>
                     </li>
@@ -387,7 +389,7 @@
                         <i class="material-icons" style="color: #cccdcf">storage</i>
                         <a href="#" id="#categories">Categories</a>
                     </li>
-                    <li class="updates-nav">                                              
+                    <li class="updates-nav">
                         <i class="material-icons" style="color: #cccdcf">file_download</i>
                         <a href="#" id="#updates">Updates</a>
                     </li>
