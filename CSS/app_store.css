@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .app-store-container {
     position: absolute;
     top: 3%;
     left: 3%;
     width: 95%;
     height: 90%;
-    background-color: rgba(194, 18, 18, 0.445);
+    background-color: rgba(36, 36, 35, 0.5);
     border-radius: 12px;
     display: none;
 }
@@ -20,8 +22,6 @@
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     text-align: center;
-    /* padding: 4px; */
-    /* border: 1px solid red; */
 }
 
 .app-store-container .up-frame .btns {
@@ -33,9 +33,12 @@
 }
 
 .app_name {
+    text-align: center;
     margin: 40%;
+    padding-bottom: 4px;
+    padding-top: 2px;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .app-store-container .up-frame .close {
@@ -57,4 +60,80 @@
     height: 12px;
     width: 12px;
     border-radius: 50%;
+}
+
+#nav-app {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    height: 96%;
+    border-bottom-left-radius: 10px;
+    background: #242423;
+}
+
+#nav-app ul {
+    line-height: 1rem;
+    list-style: none;
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#nav-app ul li:nth-child(n+2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#nav-app li a {
+    display: flex;
+    text-decoration: none;
+    color: #c8cbcc;
+    margin-left: 12px;
+}
+
+#nav-app .nav-app-list li:last-child{
+    position: absolute;
+    bottom: 15px;
+}
+
+#nav-app li:nth-child(n+2):hover {
+    width: 91%;
+    padding: 10px;
+    /* margin: 5px 4px; */
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    margin: 5px 0;
+    background: #515153;
+    /* border-radius: 5px; */
+}
+
+.search-bar .search-bar-color[placeholder="Search"] {
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: #c8cbcc;
+    background: #464749;
+    border-radius: 10px;
+    border-color: #5c5d61;
+}
+
+.search-bar .search-bar-color[placeholder="Search"]:active {
+    border-color: #4f4f51;
+    color: #fff;
 }
