@@ -9,3 +9,11 @@ $('#app-store-app .up-frame .btns .close').click(function () {
     // $('.app-store-container').removeClass("animate__zoomOut");
     $('.app-store-container').addClass("animate__zoomOutDown");
 })
+
+
+// ----------------------------------------------------------------------------
+// CODE FOR SWITCHING BETWEEN TABS IN APP-STORE 
+$('.create-nav').click(() => {
+    ("#['HERE COMES THE MAIN CONTAINER OF CREATE-NAV-SCREEN']").css("display", "block");
+    ("#['HERE COMES THE MAIN CONTAINER OF DISCOVER-NAV-SCREEN']").css("display", "none");
+})
