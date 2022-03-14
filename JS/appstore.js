@@ -7,9 +7,8 @@ $('#app-store').click(function () {
 $('#app-store-app .up-frame .btns .close').click(function () {
     OPEN_APP_COUNTER--;
     // $('.app-store-container').removeClass("animate__zoomOut");
-    $('.app-store-container').addClass("animate__zoomOutDown");
+    $('.app-store-container').addClass("animate__zoomOutDown animate__fast");
 })
-
 
 // ----------------------------------------------------------------------------
 // CODE FOR SWITCHING BETWEEN TABS IN APP-STORE 
