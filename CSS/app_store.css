@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
+/* App Store Container */
 .app-store-container {
-    position: absolute;
+    position: fixed;
     top: 3%;
     left: 3%;
     width: 95%;
@@ -62,6 +63,7 @@
     border-radius: 50%;
 }
 
+/* Navigation Bar */
 #nav-app {
     
     position:relative;
@@ -103,7 +105,6 @@
     transition: all 0.5s ease-in-out;
 }
 
-
 #nav-app li a {
     display: flex;
     text-decoration: none;
@@ -142,11 +143,11 @@
     opacity: none;
 }
 
-
 .search-bar .search-bar-color[placeholder="Search"]:active {
     border-color: #4f4f51;
     color: #fff;
 }
+
 .search-bar .search-bar-color[placeholder="Search"]:focus {
   border: none;
   outline: none;
@@ -158,8 +159,8 @@
     top: 32px;
     left: 200px;
 }
+
 .active-tab {
-    /* border: 1px solid red;    */
     background-color: #4f4f51;
     border-radius: 5px;
 }
