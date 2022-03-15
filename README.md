@@ -4,7 +4,7 @@ This project is an effort to create a responsive interface with all the latest m
 Live:Production:https://vivek-suthar.github.io/macOS-Clone/<br>
      Development:https://macosclone.netlify.app/ 
      <br>
-     #### Working Features and App:
-     #### App:Finder,Launchpad,Facetime,Terminal,App-Store,Calender,About Mac
-     #### Feature:Live Weather,Real Time Clock And Date and Time,Widgets Panel,Working uppermenu and Docker
+#### Working Features and App:
+#### App:Finder,Launchpad,Facetime,Terminal,App-Store,Calender,About Mac
+#### Feature:Live Weather,Real Time Clock And Date and Time,Widgets Panel,Working uppermenu and Docker
 
