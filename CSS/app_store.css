@@ -18,7 +18,7 @@
     background-color: rgba(36, 36, 35, 0.5);
     border-radius: 12px;
     display: none;
-    border: 10px cyan solid;
+    /* border: 10px cyan solid; */
 }
 
 .app-store-container .up-frame {
@@ -190,7 +190,7 @@
     position: relative;
     width: inherit;
     height: 45%;
-    margin-left: 20px;
+    margin: 0 20px;
     border: 1px green solid;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -237,26 +237,44 @@
 }
 
 #div-mid {
-    width: 100%;
+    width: max-content;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     position: absolute;
     top: 55%;
+    width: 75%;
+    margin: 0 10px;
     border: 1px cyan solid;
 }
 
 #div-mid #from-the-editors {
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
     align-items: flex-start;
     align-content: flex-start;
+    flex-wrap: row;
     border: 1px red solid;
-    height: 150px;
+    height: 180px;
     width: 50%;
 }
 
-#div-mid #from-the-editors .img {
+#div-mid #from-the-editors img {
     position: absolute;
-    height: 50px;
+    margin: 10px 0;
+    left: 200px;
+    height: 135px;
+    border-radius: 100%;
+    border: 2px purple solid;
 } 
+
+#div-mid #our-favorites {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    border: 2px orange solid;
+    height: 150px;
+    width: 50%;
+}
