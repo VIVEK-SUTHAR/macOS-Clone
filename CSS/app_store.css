@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 /* App Store Container */
+.container-app-store {
+    border: 3px yellowgreen solid;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .app-store-container {
     position: fixed;
     top: 3%;
@@ -10,6 +18,7 @@
     background-color: rgba(36, 36, 35, 0.5);
     border-radius: 12px;
     display: none;
+    border: 10px cyan solid;
 }
 
 .app-store-container .up-frame {
@@ -64,9 +73,8 @@
 }
 
 /* Navigation Bar */
-#nav-app {
-    
-    position:relative;
+#nav-app { 
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
@@ -76,9 +84,10 @@
     text-align: center;
     align-items: center;
     width: 20%;
-    height: 96%;
+    height: 100%;
     border-bottom-left-radius: 10px;
     background: #242423;
+    border: 2px white solid;
 }
 
 #nav-app ul {
@@ -123,10 +132,12 @@
     border-radius: 5px;
     background: #515153;
 }
-.search-bar{
+
+.search-bar {
     display: flex;
     flex-direction: row;
 }
+
 .search-bar .search-bar-color[placeholder="Search"] {
     padding: 5px;
     margin: 3px 30px;
@@ -164,26 +175,88 @@
     background-color: #4f4f51;
     border-radius: 5px;
 }
-#discover-tab{
-    position: fixed;
-    height: 95.8%;
-    width: 80%;
-    margin-top: -47.25%;
-    left: 20%;
-    background-color:transparent;
 
+#discover-tab{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c8cbcc;
+    background-color: #1f2022;
+    border: 5px red solid;
+    width: 100%;
 }
 
+    #discover-tab img {
+    position: relative;
+    width: inherit;
+    height: 45%;
+    margin-left: 20px;
+    border: 1px green solid;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    opacity: 0.7;
+}
 
+#discover-tab .disc-heading {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    font-size: 15px;
+    font-weight: 2000;
+    margin-bottom: 13px;
+}
 
+#discover-tab .disc-middle {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    font-size: 26px;
+    margin-bottom: 13px;
+    color: #fff;
+}
 
+#discover-tab .disc-para {
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    color: #c8cbcc;
+    font-size: 15px;
+}
 
+/* Font of middle part of discover tab */
+#div-mid .head {
+    font-size: 15px;
+}
 
+#div-mid .mid {
+    font-size: 26px;
+}
 
+#div-mid .para {
+    font-size: 15px;
+}
 
+#div-mid {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    border: 1px cyan solid;
+}
 
+#div-mid #from-the-editors {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    border: 1px red solid;
+    height: 150px;
+    width: 50%;
+}
 
-
-
-
-
+#div-mid #from-the-editors .img {
+    position: absolute;
+    height: 50px;
+} 
