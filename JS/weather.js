@@ -28,4 +28,29 @@ fetch(
     )
     .catch((err) => console.log(err));
 
+// -----------------------------------------------------------------------------------------------------------------------------------
+//                                 CODE FOR FETCHING DATA OF CRYPTO CURRENCIES IN WIDGETS PANEL
+// -----------------------------------------------------------------------------------------------------------------------------------
 
+fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false")
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+        const crypto_name = data[0].name;
+        const crypto_price = data[0].current_price;
+        const crypto_price_change = data[0].price_change_percentage_24h;
+        console.log(crypto_price);
+        const display_crypto_name = document.querySelector(".crypto-name");
+        display_crypto_name.innerHTML = crypto_name;
+        const display_crypto_price = document.querySelector(".current_price");
+        display_crypto_price.innerHTML = "$" + crypto_price;
+        console.log(crypto_price_change);
+        const display_price_change = document.querySelector(".change");
+        display_price_change.innerHTML = Math.round(crypto_price_change * 10) + "%";
+        if (crypto_price_change < 0) {
+            display_price_change.classList.add("negative-change");
+            
+        }
+
+    })
+    .catch((err) => console.log(err));
