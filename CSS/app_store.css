@@ -199,8 +199,8 @@
 
 #discover-tab .disc-heading {
     position: absolute;
-    top: 50px;
-    left: 60px;
+    top: 52px;
+    left: 320px;
     font-size: 15px;
     font-weight: 2000;
     margin-bottom: 13px;
@@ -208,17 +208,17 @@
 
 #discover-tab .disc-middle {
     position: absolute;
-    top: 80px;
-    left: 60px;
+    top: 82px;
+    left: 320px;
     font-size: 26px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
 #discover-tab .disc-para {
     position: absolute;
     top: 130px;
-    left: 60px;
+    left: 320px;
     color: #c8cbcc;
     font-size: 15px;
 }
@@ -243,38 +243,52 @@
     align-content: flex-start;
     align-items: flex-start;
     position: absolute;
-    top: 55%;
+    top: 50%;
     width: 75%;
     margin: 0 10px;
-    border: 1px cyan solid;
+    /* padding: 10px; */
+    border: 8px cyan solid;
 }
 
 #div-mid #from-the-editors {
     display: flex;
     flex-direction: column;
     justify-self: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-self: flex-start;
     flex-wrap: row;
     border: 1px red solid;
-    height: 180px;
+    height: 189px;
     width: 50%;
+    padding: 5px;
 }
 
 #div-mid #from-the-editors img {
     position: absolute;
+    /* flex-direction: row; */
+    top: 45px;
     margin: 10px 0;
-    left: 200px;
+    left: 290px;
     height: 135px;
+    width: 150px;
     border-radius: 100%;
-    border: 2px purple solid;
+    /* border: 2px purple solid; */
 } 
 
 #div-mid #our-favorites {
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
-    border: 2px orange solid;
-    height: 150px;
+    border: 5px orange solid;
+    height: 180px;
     width: 50%;
+}
+
+#div-mid #our-favorites .images {
+    display: flex;
+    flex-direction:inherit;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 180px;
+    height: 100px;
 }
