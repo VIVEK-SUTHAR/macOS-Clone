@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    overflow: scroll;
+    box-sizing: border-box;
 }
 
 .app-store-container {
@@ -177,8 +179,9 @@
 }
 
 #discover-tab{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #c8cbcc;
     background-color: #1f2022;
@@ -186,7 +189,77 @@
     width: 100%;
 }
 
-    #discover-tab img {
+#disc-top {
+    position: relative;
+    /* display: block; */
+    width: 100%;
+    /* background-image: url(../discover-top.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+    height: 28vh;
+    margin: 1px;
+    border-radius: 10px;
+    /* background-position-x: 0; */
+}
+
+#disc-top::before {
+    content: "";
+    background-image: url(../discover-top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      margin: 4px 4px 0 4px;
+      opacity: 0.3;
+}
+
+#disc-top .head {
+    position: relative;
+    text-align: center left;
+    padding: 10px 13px;
+    font-size: large;
+    color: #fff;
+}
+
+/* Middle Part Discover */
+#div-mid {
+    /* position: relative; */
+    height: 29vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: minmax(1fr, 3fr);
+    grid-gap: 5px;
+    border: 5px solid gold;
+    
+}
+
+.mid-cards {
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-auto-columns: auto; */
+    grid-gap: 5px;
+    border: 1px solid blanchedalmond;
+    justify-self: flex-start;
+}
+
+.mid-cards img {
+    display: grid;
+    width: 200px;
+    border: 3px solid greenyellow;
+    justify-self: end;
+    align-content: center;
+}
+
+/* #discover-tab img {
     position: relative;
     width: inherit;
     height: 45%;
@@ -224,7 +297,7 @@
 }
 
 /* Font of middle part of discover tab */
-#div-mid .head {
+/* #div-mid .head {
     font-size: 15px;
 }
 
@@ -247,9 +320,9 @@
     width: 75%;
     margin: 0 10px;
     /* padding: 10px; */
-    border: 8px cyan solid;
-}
-
+    /* border: 8px cyan solid;
+} */
+/*
 #div-mid #from-the-editors {
     display: flex;
     flex-direction: column;
@@ -265,15 +338,15 @@
 #div-mid #from-the-editors img {
     position: absolute;
     /* flex-direction: row; */
-    top: 45px;
+  /*  top: 45px;
     margin: 10px 0;
     left: 290px;
     height: 135px;
     width: 150px;
     border-radius: 100%;
     /* border: 2px purple solid; */
-} 
 
+/*
 #div-mid #our-favorites {
     padding: 5px;
     display: flex;
@@ -291,4 +364,4 @@
     padding: 5px;
     width: 180px;
     height: 100px;
-}
+}  */
